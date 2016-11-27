@@ -1,0 +1,39 @@
+﻿<Window x:Class="SGI.View.AgregarSeriesComentario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AgregarSeriesComentario"
+        Width="300" WindowStartupLocation="CenterScreen"
+        Height="600">
+    <DockPanel LastChildFill="True">
+        <GroupBox DockPanel.Dock="Top" Header="Comentario">
+            <TextBox Height="70" Text="{Binding Detalle.Comentario}" AcceptsReturn="True"  />
+        </GroupBox>
+        <GroupBox Header="Agregar numeros de serie por producto">
+            <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                <ItemsControl ItemsSource="{Binding Detalle.Series.Values}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Vertical" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Label Content="{Binding Nombre}" />
+                                <TextBox  Grid.Column="1"
+                                     Height="30"
+                                     Text="{Binding Valor,
+                                                    UpdateSourceTrigger=PropertyChanged}" />
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+         
+        </GroupBox>
+    </DockPanel>
+</Window>

@@ -1,0 +1,96 @@
+﻿<Window x:Class="SGI.View.NewOrderBuyView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+       Title="{Binding TitleWindow}" Height="520" Width="500" WindowStartupLocation="CenterScreen"        
+        Style="{StaticResource WindowDialog}" x:Name="newOrderBuy" >
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding Loaded}" CommandParameter="{Binding ElementName=newOrderBuy}">
+            </i:InvokeCommandAction>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <DockPanel>
+        <Label  DockPanel.Dock="Top" Content="{Binding TitleWindow}" Style="{StaticResource LabelTitle}"/>
+        <Border DockPanel.Dock="Bottom" Style="{StaticResource BorderBottom}" >
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button IsDefault="True" Content="Aceptar" Command="{Binding Accept}" IsEnabled="{Binding IsEnableButton}" Style="{StaticResource ButtonApp}" />
+                <Button IsCancel="True" Content="Cancelar" Command="{Binding Close}" Style="{StaticResource ButtonApp}" />
+            </StackPanel>
+        </Border>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Label Height="35"   Content="Proveedor:" Grid.Row="0" Grid.Column="0"/>
+            <TextBox Height="35" Grid.Row="0" Grid.Column="1"   MaxLength="100"
+                     Text="{Binding ProviderName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Margin="0,0,5,0"
+                     IsReadOnly="True"
+                     />
+            
+            <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" Width="40" Height="30" 
+                    Margin="0,3,5,3" Content="..."
+                    Command="{Binding SelectedProvider}"
+                    />
+
+            <Label Height="35"   Content="Empleado comprador:" Grid.Row="1" Grid.Column="0"/>
+            <TextBox Height="35" Grid.Row="1" Grid.Column="1"   MaxLength="100"
+                     Text="{Binding EmployeeBuyeerName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Margin="0,0,5,0"
+                       IsReadOnly="True"/>
+            <Button Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" Width="40" Height="30" Margin="0,3,5,3" Content="..."
+                    Command="{Binding SelectedEmployeeBuyeer}"/>
+
+
+            <Label Height="35"   Content="Empleado Validador:" Grid.Row="2" Grid.Column="0"/>
+            <TextBox Height="35" Grid.Row="2" Grid.Column="1"   MaxLength="50"
+                     Text="{Binding EmployeeValidatorName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Margin="0,0,5,0"
+                       IsReadOnly="True" />
+            <Button Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" Width="40" Height="30" Margin="0,3,5,3" Content="..."
+                    Command="{Binding SelectedEmployeeValidator}"/>
+
+            <Label Height="35"   Content="Condición de pago:" Grid.Row="3" Grid.Column="0"/>
+            <ComboBox Height="35" Grid.Row="3" Grid.Column="1" Style="{StaticResource CmbValue}"  ItemsSource="{Binding PaymentList}"
+                      SelectedValuePath="Id"  
+                      DisplayMemberPath="Name" SelectedValue="{Binding SelectedPayment}"                  
+                      Margin="0,0,5,0"/>
+            
+            <!--<ComboBox Grid.Row="0" Grid.Column="1" Style="{StaticResource CmbValue}" ItemsSource="{Binding ListModels}" 
+                      DisplayMemberPath="Model" SelectedValuePath="Id" SelectedValue="{Binding SelectedModel}" Margin="0,0,5,0"/>-->
+
+
+            <Label Height="35"   Content="Orden de compra:" Grid.Row="4" Grid.Column="0"/>
+            <TextBox Height="35" Grid.Row="4" Grid.Column="1"   MaxLength="50"
+                     Text="{Binding OrderBuy, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Margin="0,0,5,0"/>
+
+            <Label Height="35"   Content="Fecha de colocación:" Grid.Row="5" Grid.Column="0"/>
+            <DatePicker Height="35" Grid.Row="5" Grid.Column="1" Style="{StaticResource styleDatePicker}"
+                     SelectedDate="{Binding ColocationDate, Mode=TwoWay}" Margin="0,0,5,0"/>
+
+            <Label Height="35"   Content="Fecha de validación:" Grid.Row="6" Grid.Column="0"/>
+            <DatePicker Height="35" Grid.Row="6" Grid.Column="1" Style="{StaticResource styleDatePicker}"
+                     SelectedDate="{Binding ValidationDate, Mode=TwoWay}" Margin="0,0,5,0"/>
+
+            <Label Height="35"   Content="Status:" Grid.Row="7" Grid.Column="0"/>
+            <ComboBox Height="35" Grid.Row="7" Grid.Column="1" Style="{StaticResource  CmbValue}" 
+                     Margin="0,0,5,0"  ItemsSource="{Binding StatusBuyList}"
+                      SelectedValuePath="Id" DisplayMemberPath="Name" SelectedValue="{Binding StatusBuyId, Mode=TwoWay}"
+                      SelectedIndex="0"
+                      />
+
+        </Grid>
+    </DockPanel>
+</Window>
+
+

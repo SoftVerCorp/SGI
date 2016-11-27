@@ -1,0 +1,152 @@
+﻿<Window x:Class="SGI.View.OC.CargarAdjuntos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cargar Adjuntos" x:Name="addAdjunto" WindowStartupLocation="CenterScreen"
+        Width="1000"
+        Height="600">
+    <DockPanel>
+        <Label Content="Cargar Archivos" DockPanel.Dock="Top" />
+
+        <!--<StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem HorizontalAlignment="Center">
+                <Button Width="120"
+                        Height="30"
+                        Command="{Binding AceptarCommando}"
+                        Content="Aceptar" />
+            </StatusBarItem>
+        </StatusBar>-->
+        <Grid Margin="4" DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0"
+                   Grid.Column="0"
+                   Content="Tipo de archivo" />
+            <ComboBox Grid.Row="0"
+                      Grid.Column="1"  DisplayMemberPath="Nombre"
+                      ItemsSource="{Binding Tipos}"
+                      SelectedIndex="0" SelectedItem="{Binding TipoArchivo}"
+                       />
+
+            <Label Grid.Row="0"
+                   Grid.Column="2"
+                   Content="Nombre" />
+            <TextBox Grid.Row="0" Margin="2,0,2,0"
+                     Grid.Column="3" Grid.ColumnSpan="2"
+                     FlowDirection="LeftToRight" IsReadOnly="True"
+                     Text="{Binding NombreArchivo}" />
+
+            <Button Margin="3,0" Width="120" Grid.Column="5" HorizontalAlignment="Left"
+                        Command="{Binding AdjuntarArchivo}"
+                        Content="Buscar Archivo"  Height="35" />
+
+
+            <!--<Label Grid.Row="0"
+                   Grid.Column="4"
+                   Content="Direccion" />
+            <TextBox Grid.Row="0"
+                     Grid.Column="5"
+                     FlowDirection="RightToLeft"
+                     IsReadOnly="True"
+                     Text="{Binding RutaArchivo}" />-->
+
+            <StackPanel Grid.Row="1" Grid.ColumnSpan="5"
+                        Grid.Column="0"
+                        Orientation="Horizontal">
+                <Button Grid.Row="0" HorizontalAlignment="Left"
+                   
+                    Width="120"
+                    Height="35"
+                    Margin="5"
+                    Command="{Binding AgregarComando}"
+                    Content="Agregar" />
+               
+                <Button Margin="3,0"
+                         Height="35" Width="120"
+                        Command="{Binding TomarFoto}"
+                        Content="Tomar Fotografia" />
+
+                
+                <Button Grid.Row="1"
+                    Grid.Column="3"
+                    Width="120"
+                    Height="35"
+                    Margin="5"
+                    Command="{Binding GuardarCmd}"
+                    Content="Guardar" />
+
+                <Button Grid.Row="1"
+                    Grid.Column="3"
+                    Width="120"
+                    Height="35"
+                    Margin="5"
+                    Command="{Binding LimpiarCmd}"
+                    Content="Limpiar" />
+            </StackPanel>
+           
+
+        </Grid>
+        <DataGrid Margin="2,5,2,5"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  CanUserResizeRows="True"
+                  FrozenColumnCount="1"
+                  ItemsSource="{Binding Archivos}"
+                  RowHeight="35"
+                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="250"
+                                    Binding="{Binding TipoArchivo}"
+                                    CanUserResize="True"
+                                    Header="Tipo"
+                                    IsReadOnly="True" />
+                <DataGridTextColumn Width="*"
+                                    Binding="{Binding NombreArchivo}"
+                                    CanUserResize="True"
+                                    Header="Nombre"
+                                    IsReadOnly="True" />
+                <!--<DataGridTextColumn Width="*"
+                                    Binding="{Binding RutaArchivo}"
+                                    CanUserResize="True"
+                                    Header="Direccion"
+                                    IsReadOnly="True" />-->
+                <DataGridTemplateColumn Width="50"
+                                        CanUserResize="True"                                       
+                                        IsReadOnly="True">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Command="{Binding ElementName=addAdjunto,Path=DataContext.AbrirDocumentoCmd}"  CommandParameter="{Binding}">
+                                <Image Source="/Resources/Images/lupa.png" Width="25" Height="25"></Image>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Width="50"
+                                        CanUserResize="True"                                       
+                                        IsReadOnly="True">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Command="{Binding ElementName=addAdjunto,Path=DataContext.EliminarDocumentoCmd}"  CommandParameter="{Binding}" >
+                                <Image Source="/Resources/Images/imgDelete.png" Width="25" Height="25"></Image>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+</Window>

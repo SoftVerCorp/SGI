@@ -1,0 +1,386 @@
+﻿<Window x:Class="SGI.View.Catalogos.CatalogoClienteView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SGI.View.Catalogos"
+        xmlns:wpfext="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:combo2="http://wpfcontrols.com/"
+        xmlns:combo="clr-namespace:SGI.AutoCombo"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:bh="clr-namespace:SGI.Stuffs"
+        mc:Ignorable="d"
+        Title="Catalogo de Clientes"   
+        Width="1200" Height="850"
+      
+        WindowState="Maximized"        
+        >
+    <Window.Resources>
+        <bh:BooleanToVisibilityConverter x:Key="boolToVis" />
+        <combo:ClientsProvider x:Key="ClientesProvider" />
+        <DataTemplate x:Key="clienteTemplate">
+            <Border Padding="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Image Grid.RowSpan="2"
+                           Width="32"
+                           Height="32"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Source="/Resources/Images/cliente.png"/>
+                    <TextBlock Text="{Binding Path=NombreFiscal}"
+                               FontWeight="Bold" 
+                               Grid.Column="1" 
+                               Grid.Row="0"
+                               FontFamily="Segoe UI" Background="White"
+                               VerticalAlignment="Bottom" Foreground="Black"/>
+                    <!--<TextBlock Text="{Binding Path=Detalle}"
+                               Grid.Column="1"
+                               Grid.Row="1"  Background="White"
+                               VerticalAlignment="Top" Foreground="Gray"/>-->
+                </Grid>
+            </Border>
+        </DataTemplate>
+    </Window.Resources>
+    <Window.InputBindings>
+        <KeyBinding Key="Esc" Modifiers="Shift" Command="{Binding SalirCmd}"/>
+        <KeyBinding Key="F3" Command="{Binding BuscarCmd}"/>
+        <KeyBinding Key="F4" Command="{Binding NuevoCmd}"/>
+        <KeyBinding Key="F2" Command="{Binding EditarCmd}"/>
+        <KeyBinding Key="F5" Command="{Binding GuardarCmd}"/>
+        <KeyBinding Key="F8" Command="{Binding CancelarCmd}"/>
+    </Window.InputBindings>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button Command="{Binding SalirCmd}" Width="120" Height="40" >
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <!--<Image Stretch="None" Source="/Resources/Images/search_icon.png" />-->
+                    <TextBlock Text="Salir [Shift-Esc]" HorizontalAlignment="Center"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button  Width="120" Height="40" Command="{Binding BuscarCmd}" >
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <!--<Image Stretch="None" Source="/Resources/Images/search_icon.png"   />-->
+                    <TextBlock Text="Buscar [F3]" HorizontalAlignment="Center"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Command="{Binding NuevoCmd}"  Width="120" Height="40" >
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <!--<Image Stretch="None" Source="/Resources/Images/search_icon.png"/>-->
+                    <TextBlock Text="Nuevo [F4]" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button  Width="120" Height="40" Command="{Binding EditarCmd}" IsEnabled="{Binding HabilitatBtnModificar}" >
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <!--<Image Stretch="None" Source="/Resources/Images/search_icon.png"   />-->
+                    <TextBlock Text="Editar [F2]" HorizontalAlignment="Center"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button  Width="120" Height="40" Command="{Binding EliminarCmd}" IsEnabled="{Binding HabilitatBtnEliminar}" >
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <!--<Image Stretch="None" Source="/Resources/Images/search_icon.png"   />-->
+                    <TextBlock Text="Eliminar" HorizontalAlignment="Center"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button IsEnabled="{Binding HabilitatBtnGuardar}" Command="{Binding GuardarCmd}"  Width="120" Height="40">
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <!--<Image Stretch="None" Source="/Resources/Images/search_icon.png"   />-->
+                    <TextBlock Text="Guardar [F5]" HorizontalAlignment="Center"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button  Width="120" Height="40" Command="{Binding CancelarCmd}" >
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <TextBlock Text="Cancelar [F8]" HorizontalAlignment="Center"></TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1"  Visibility="{Binding IsEnabledFind, Converter={StaticResource boolToVis}}">
+            <Label Grid.Row="0" 
+                       Grid.Column="0"
+                       HorizontalContentAlignment="Center"
+                       Content="Cliente:" />
+            <combo2:AutoCompleteTextBox Width="500"  Margin="5"
+                VerticalAlignment="Center" 
+                Grid.Row="0"
+                Grid.Column="1" Grid.ColumnSpan="7"                         
+                Height="30" 
+                DisplayMember="Nombre"
+                ItemTemplate="{StaticResource clienteTemplate}"
+                Watermark="Buscar por nombre"
+                IconPlacement="Left"
+                IconVisibility="Visible"
+                Provider="{StaticResource ResourceKey=ClientesProvider}"
+                x:Name="Actb"
+                Focusable="True"            
+                >
+                <combo2:AutoCompleteTextBox.SelectedItem>
+                    <Binding Path="SelectedCliente" Mode="TwoWay">
+                        <Binding.ValidationRules>
+                            <combo:RequiredValidationRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </combo2:AutoCompleteTextBox.SelectedItem>
+                <combo2:AutoCompleteTextBox.LoadingContent>
+                    <TextBlock Text="Cargando..."
+                           Margin="5"  Background="White"
+                           FontSize="14"  Foreground="Black"/>
+                </combo2:AutoCompleteTextBox.LoadingContent>
+                <combo2:AutoCompleteTextBox.Icon>
+                    <Border Width="20" Height="20">
+                        <Image Source="/Resources/Images/search_icon.png"
+                                   Height="16"
+                                   Width="16"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center" />
+                    </Border>
+                </combo2:AutoCompleteTextBox.Icon>
+            </combo2:AutoCompleteTextBox>
+        </StackPanel>
+
+        <ScrollViewer Grid.Row="2">
+
+            <Grid ScrollViewer.CanContentScroll="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <GroupBox Grid.Row="0" Header="Datos del cliente" Margin="2">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Content="Clave"></Label>
+                        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding SelectedCliente.IdCliente, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True"></TextBox>
+
+                        <Label Grid.Row="0" Grid.Column="2" Content="Tipo de Cliente"></Label>
+                        <ComboBox  Grid.Row="0" Grid.Column="3" ItemsSource="{Binding TipoDeClientes}" Margin="5,0,0,0"
+                           DisplayMemberPath="TipoClientes" SelectedItem="{Binding TipodeCliente}" Height="30" IsEnabled="{Binding IsEditable}" />
+
+                        <Label Grid.Row="0" Grid.Column="5" Content="Incobrable"></Label>
+                        <CheckBox Grid.Row="0" Margin="5,12,0,0" Grid.Column="4" IsChecked="{Binding Incobrable,Mode=TwoWay}" VerticalAlignment="Top"></CheckBox>
+                        <!--<TextBox Grid.Row="0" Grid.Column="4" Text="{Binding ClientText}" ></TextBox>-->
+
+
+
+
+                    </Grid>
+                </GroupBox>
+
+                <GroupBox Grid.Row="1" Header="Datos fiscales del cliente" Margin="2">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="231*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="231*"></ColumnDefinition>
+                            <ColumnDefinition Width="55*"></ColumnDefinition>
+                            <ColumnDefinition Width="230*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="231*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Content="Nombre Fiscal"></Label>
+                        <TextBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Text="{Binding Nombrefiscal,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True">
+                        </TextBox>
+
+                        <Label Grid.Row="0" Grid.Column="4" Content="RFC"></Label>
+                        <TextBox Grid.Row="0" Grid.Column="5" Text="{Binding Rfc,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True">
+                        </TextBox>
+
+                        <Label Grid.Row="0" Grid.Column="6" Content="Tipo Persona"></Label>
+
+                        <ComboBox  Grid.Row="0" Grid.Column="7" Grid.ColumnSpan="2" ItemsSource="{Binding TipoDePersonas}" Margin="5,0,0,0"
+                           DisplayMemberPath="Tipo" SelectedItem="{Binding TipoPersona}" Height="30" IsEnabled="{Binding IsEnabled}"/>
+
+                        <Label Grid.Row="1" Grid.Column="0" Content="Calle y numero"></Label>
+                        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Text="{Binding Direccion,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True">
+                        </TextBox>
+
+                        <Label Grid.Row="1" Grid.Column="4" Content="Colonia"></Label>
+                        <TextBox Grid.Row="1" Grid.Column="5" Text="{Binding Colonia,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True"></TextBox>
+
+                        <Label Grid.Row="1" Grid.Column="6" Content="C.P."></Label>
+                        <TextBox Grid.Row="1" Grid.Column="7" Text="{Binding Cp,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True" PreviewTextInput="TextBox_PreviewTextInput">
+                        </TextBox>
+
+                        <Label Grid.Row="2" Grid.Column="0" Content="Estado"></Label>
+                        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Estado,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True"></TextBox>
+
+                        <Label Grid.Row="2" Grid.Column="2" Content="Ciudad"></Label>
+                        <TextBox Grid.Row="2" Grid.Column="3" Text="{Binding Ciudad,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True"></TextBox>
+
+                        <Label Grid.Row="2" Grid.Column="4" Content="Zona"></Label>
+                        <TextBox Grid.Row="2" Grid.Column="5" Text="{Binding Zona,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True"></TextBox>
+
+                    </Grid>
+                </GroupBox>
+
+                <GroupBox Grid.Row="2" Header="Datos comerciales del cliente" Margin="2">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Content="Nombre comercial"></Label>
+                        <TextBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Text="{Binding NombreComercial,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True"></TextBox>
+
+                        <Label Grid.Row="0" Grid.Column="4" Content="Pagina Web"></Label>
+                        <TextBox Grid.Row="0" Grid.Column="5" Text="{Binding PaginaWeb,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True"></TextBox>
+
+                        <Label Grid.Row="1" Grid.Column="0" Content="Contacto"></Label>
+                        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Text="{Binding Contacto,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True"></TextBox>
+
+                        <Label Grid.Row="1" Grid.Column="4" Content="Telefono contacto"></Label>
+                        <TextBox Grid.Row="1" Grid.Column="5" Text="{Binding TelefonoContacto,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True"></TextBox>
+
+                        <Label Grid.Row="2" Grid.Column="0" Content="Direccion de envio"></Label>
+                        <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Text="{Binding DireccionEnvio,Mode=TwoWay}" AcceptsReturn="True" TextWrapping="Wrap" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True"></TextBox>
+
+                        <Label Grid.Row="3" Grid.Column="0" Content="Telefono 1"></Label>
+                        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Telefono1,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True" PreviewTextInput="TextBox_PreviewTextInput"></TextBox>
+
+                        <Label Grid.Row="3" Grid.Column="2" Content="Telefono 2"></Label>
+                        <TextBox Grid.Row="3" Grid.Column="3" Text="{Binding Telefono2,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True" PreviewTextInput="TextBox_PreviewTextInput"></TextBox>
+
+                        <Label Grid.Row="3" Grid.Column="4" Content="Telefono 3"></Label>
+                        <TextBox Grid.Row="3" Grid.Column="5" Text="{Binding Telefono3,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True" PreviewTextInput="TextBox_PreviewTextInput"></TextBox>
+
+                        <Label Grid.Row="4" Grid.Column="0" Content="Celular"></Label>
+                        <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Celular,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True" PreviewTextInput="TextBox_PreviewTextInput"></TextBox>
+
+                        <Label Grid.Row="4" Grid.Column="2" Content="Fax"></Label>
+                        <TextBox Grid.Row="4" Grid.Column="3" Text="{Binding Fax,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True" PreviewTextInput="TextBox_PreviewTextInput"></TextBox>
+
+                        <Label Grid.Row="4" Grid.Column="4" Content="E mail"></Label>
+                        <TextBox Grid.Row="4" Grid.Column="5" Text="{Binding Email,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True"></TextBox>
+
+                    </Grid>
+                </GroupBox>
+
+                <GroupBox Grid.Row="3" Header="Condiciones de credito" Margin="2">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Content="Dias de credito"></Label>
+                        <wpfext:IntegerUpDown Grid.Row="0" Grid.Column="1"  AutoSelectBehavior="OnFocus" Height="30"
+                             Width="90" FontSize="14" FontWeight="Bold"  Increment="1" HorizontalContentAlignment="Center"
+                             Minimum="0"  Watermark="Dias" DefaultValue="1"
+                             Value="{Binding DiasDeCredito, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <!--<TextBox Grid.Row="0" Grid.Column="1" Text="{Binding ClientText}" ></TextBox>-->
+
+
+
+                        <Label Grid.Row="0" Grid.Column="2" Content="Saldo inicial"></Label>
+                        <TextBox Grid.Row="0" Grid.Column="3" Text="{Binding SaldoInicial,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True" PreviewTextInput="TextBox_PreviewTextInput"></TextBox>
+
+                        <Label Grid.Row="0" Grid.Column="4" Content="Limite credito"></Label>
+                        <TextBox Grid.Row="0" Grid.Column="5" Text="{Binding LimiteDeCredito,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True" PreviewTextInput="TextBox_PreviewTextInput"></TextBox>
+
+                        <Label Grid.Row="1" Grid.Column="4" Content="Saldo del cliente"></Label>
+                        <TextBox Grid.Row="1" Grid.Column="5" Text="{Binding SaldoCliente}" IsEnabled="False" bh:TextBoxBehavior.SelectAllTextOnFocus="True"></TextBox>
+
+                        <Label Grid.Row="2" Grid.Column="4" Content="Saldo a favor"></Label>
+                        <TextBox Grid.Row="2" Grid.Column="5" Text="{Binding SaldoAFavor}" IsEnabled="False" bh:TextBoxBehavior.SelectAllTextOnFocus="True"></TextBox>
+
+                        <Label Grid.Row="3" Grid.Column="4" Content="Credito utilizado"></Label>
+                        <TextBox Grid.Row="3" Grid.Column="5" Text="{Binding CreditoUtilizado}" IsEnabled="False" bh:TextBoxBehavior.SelectAllTextOnFocus="True"></TextBox>
+
+                        <Label Grid.Row="4" Grid.Column="4" Content="Total credito utilizado"></Label>
+                        <TextBox Grid.Row="4" Grid.Column="5" Text="{Binding TotalCreditoUtilizado}" IsEnabled="False" bh:TextBoxBehavior.SelectAllTextOnFocus="True"></TextBox>
+
+                        <Label Grid.Row="5" Grid.Column="4" Content="Traspasos hasta por:"></Label>
+
+                    </Grid>
+                </GroupBox>
+
+                <GroupBox Grid.Row="4" Header="Datos para uso de sitio Web" Margin="2">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Content="Usuario"></Label>
+                        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Usuario,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}"  bh:TextBoxBehavior.SelectAllTextOnFocus="True"></TextBox>
+
+                        <Label Grid.Row="0" Grid.Column="2" Content="Contraseña"></Label>
+                        <TextBox Grid.Row="0" Grid.Column="3" Text="{Binding Password,Mode=TwoWay}" IsEnabled="{Binding IsEnabled}" bh:TextBoxBehavior.SelectAllTextOnFocus="True"></TextBox>
+
+                        <Label Grid.Row="0" Grid.Column="5" Content="Permitir comprar por internet"></Label>
+                        <CheckBox Grid.Row="0" Grid.Column="4" IsChecked="{Binding PermitirComprasInternet,Mode=TwoWay}" VerticalAlignment="Center" IsEnabled="{Binding IsEnabled}"></CheckBox>
+
+                    </Grid>
+                </GroupBox>
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Window>

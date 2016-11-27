@@ -1,0 +1,76 @@
+﻿<Window x:Class="SGI.View.CreditoYCobranza.Abonar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Abonar" Height="500" Width="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="140"></RowDefinition>
+        </Grid.RowDefinitions>
+        <GroupBox Header="Abonar">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Cantidad"  />
+                <TextBox Width="150" Text="{Binding Cantidad}" />
+                <Label Margin="10,0,0,0" Content="Fecha de abono"  />
+                <DatePicker Style="{StaticResource styleDatePicker}" SelectedDate="{Binding Fecha}" Width="150" />
+                <Button Content="Realizar Abono" Width="120" Height="35" Command="{Binding AbonarCmd}" Margin="10,0,0,0" />
+            </StackPanel>
+        </GroupBox>
+
+        <DataGrid Grid.Row="1" Grid.Column="0"
+                  Margin="5,0,5,5"
+                  AutoGenerateColumns="False"
+                  AlternatingRowBackground="#d5d5d5"
+                  CanUserAddRows="False" IsReadOnly="False"
+                  CanUserResizeRows="True"
+                  ItemsSource="{Binding Abonos}"  
+                 >
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Width="180"
+                                    Binding="{Binding FechaAbono}"
+                                    CanUserResize="True"
+                                    Header="Fecha"
+                                    IsReadOnly="True" >
+                </DataGridTextColumn>   
+
+                <DataGridTextColumn Width="*"
+                                    Binding="{Binding Cantidad,StringFormat='{}{0:C}'}"
+                                    CanUserResize="True"
+                                    Header="Total $"
+                                    IsReadOnly="True" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Label Content="Abonos" Grid.Row="0" Grid.Column="2" />
+            <TextBox Grid.Row="0" Grid.Column="3" Text="{Binding TotalAbonos}" IsReadOnly="True" />
+            <Label Content="Restan" Grid.Row="1" Grid.Column="2" />
+            <TextBox Grid.Row="1" Grid.Column="3" Text="{Binding Restan}" IsReadOnly="True" />
+            <Label Content="Total" Grid.Row="2" Grid.Column="2" />
+            <TextBox Grid.Row="2" Grid.Column="3" Text="{Binding TotalVenta}" IsReadOnly="True" />
+        </Grid>
+
+    </Grid>
+</Window>

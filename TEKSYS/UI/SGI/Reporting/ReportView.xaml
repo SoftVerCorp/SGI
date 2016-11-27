@@ -1,0 +1,13 @@
+﻿<Window x:Class="SGI.Reporting.ReportView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:RV="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms" 
+         WindowState="Maximized"
+        
+        Title="ReportView" Height="300" Width="300">
+    <DockPanel>
+        <WindowsFormsHost x:Name="WinFormHost">
+            <RV:ReportViewer x:Name="Reporting"></RV:ReportViewer>
+        </WindowsFormsHost>
+    </DockPanel>
+</Window>

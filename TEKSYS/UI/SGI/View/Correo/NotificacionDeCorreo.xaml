@@ -1,0 +1,157 @@
+﻿<Window x:Class="SGI.View.Correo.NotificacionDeCorreo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Notificacion DeCorreo" Height="600" Width="600"
+        xmlns:combo="clr-namespace:SGI.AutoCombo"
+        xmlns:combo2="http://wpfcontrols.com/"
+          xmlns:bsFilter="http://schemas.bolapansoft.com/xaml/Controls/ItemsFilter"
+          xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:mvvm="clr-namespace:SGI.Stuffs" x:Name="winMain"
+        >
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/Styles/ItemsFilterStyle.xaml" />
+                <ResourceDictionary Source="/Resources/Templates.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <GroupBox Header="Datos del usuario" Height="210">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Label Content="Usuario:" Grid.Row="2" />
+                <combo2:AutoCompleteTextBox x:Name="comboproductos2"
+                                                Grid.Row="2"
+                                                Grid.Column="1"   
+                                            Grid.ColumnSpan="2"
+                                                Height="35"
+                                                Margin="2"
+                                                VerticalAlignment="Center"
+                                                DisplayMember="Nombre"
+                                                IconPlacement="Left"
+                                                IconVisibility="Visible"
+                                                ItemTemplate="{StaticResource cmbUsuariosTemplate}"
+                                                 Provider="{StaticResource ResourceKey=cmbUsuariosProvider}"
+                                                Watermark="Buscar por nombre">
+                    <combo2:AutoCompleteTextBox.SelectedItem>
+                        <Binding Mode="TwoWay" Path="UsuarioSeleccionado">
+                            <Binding.ValidationRules>
+                                <combo:RequiredValidationRule />
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </combo2:AutoCompleteTextBox.SelectedItem>
+                    <combo2:AutoCompleteTextBox.LoadingContent>
+                        <TextBlock Margin="5"
+                                       Background="White"
+                                       FontSize="14"
+                                       Foreground="Black"
+                                       Text="Cargando..." />
+                    </combo2:AutoCompleteTextBox.LoadingContent>
+                    <combo2:AutoCompleteTextBox.Icon>
+                        <Border Width="20" Height="20">
+                            <Image Width="16"
+                                       Height="16"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       Source="/Resources/Images/search_icon.png" />
+                        </Border>
+                    </combo2:AutoCompleteTextBox.Icon>
+                </combo2:AutoCompleteTextBox>
+
+                <Label Content="Ubicación:" Grid.Row="1" Grid.Column="0" />
+                <TextBox Grid.Row="1" Grid.Column="1" IsReadOnly="True" Text="{Binding Ubicacion, Mode=OneTime}" Grid.ColumnSpan="2" />
+
+                <Label Content="Tipo de Notificación:" Grid.Row="0" Grid.Column="0" />
+
+                <ComboBox Grid.Row="0" Grid.Column="1" Height="30" Grid.ColumnSpan="2" ItemsSource="{Binding Notificaciones}" 
+                          DisplayMemberPath="TipoNotificacion" SelectedValuePath="IdTipoNotificacion" 
+                          SelectedValue="{Binding Notificacion}"></ComboBox>
+
+                <StackPanel Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal">
+                    <Button Content="Agregar" Command="{Binding AgregarCmd}" Width="100" Height="35" Grid.Column="2" Grid.Row="2" Margin="0,0,2,0" />
+                    <Button Content="Guardar" Command="{Binding GuardarCmd}" Width="100" Height="35" Grid.Column="2" Grid.Row="2" Margin="0,0,2,0" />
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+
+        <bsFilter:FilterDataGrid x:Name="dgSuppliers" 
+                                 Grid.Row="4"
+                                 Margin="5,0,5,5"
+                                 AutoGenerateColumns="False"
+                                 Background="Silver"
+                                 CanUserAddRows="False"
+                                 CanUserResizeRows="True"
+                                 ItemsSource="{Binding Usuarios}">
+            <DataGrid.Columns>
+
+                <DataGridTemplateColumn Width="*"
+                                        CanUserResize="True"
+                                        Header="Empleado"
+                                        IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label Margin="1,1,4,1"
+                                   HorizontalContentAlignment="Left"
+                                   VerticalContentAlignment="Center"
+                                   Content="{Binding Nombre,
+                                                     Mode=TwoWay,
+                                                     UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Width="150"
+                                        CanUserResize="True"
+                                        Header="Correo"
+                                        IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label Margin="1,1,4,1"
+                                   HorizontalContentAlignment="Left"
+                                   VerticalContentAlignment="Center"
+                                   Content="{Binding Correo,
+                                                     Mode=TwoWay,
+                                                     UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Width="50">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Command="{Binding ElementName=winMain,Path=DataContext.EliminarCmd}" CommandParameter="{Binding}">
+                                <Image Width="25"
+                                       Height="30"
+                                       Source="/Resources/Images/imgDelete32.png"
+                                       Stretch="Fill" />
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+
+
+            </DataGrid.Columns>
+
+        </bsFilter:FilterDataGrid>
+    </Grid>
+</Window>

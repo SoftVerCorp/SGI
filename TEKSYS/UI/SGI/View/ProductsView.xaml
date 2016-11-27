@@ -1,0 +1,420 @@
+﻿<UserControl x:Class="SGI.View.ProductsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mvvm="clr-namespace:SGI.Stuffs"
+             x:Name="miuser"
+             d:DesignHeight="300"
+             d:DesignWidth="1100"
+             Background="#C0C0C0"
+             mc:Ignorable="d">
+    <UserControl.Resources />
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding Loaded}" CommandParameter="{Binding ElementName=viewProducts}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <DockPanel>
+        <Label Content="Consultar Productos"
+               DockPanel.Dock="Top"
+               Style="{StaticResource LabelTitle}" />
+        <GroupBox Margin="2,2,2,2"
+                  BorderBrush="Black"
+                  BorderThickness="1"
+                  DockPanel.Dock="Top"
+                  Foreground="Black"
+                  Header="Busqueda">
+            <Border Margin="0,2,0,2">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80" />
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="80" />
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="120" />
+                        <ColumnDefinition Width="auto" />
+
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Button Grid.Column="4"
+                            Width="100"
+                            Height="35"
+                            Margin="5,1,2,1"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Command="{Binding Refresh}"
+                            Content="Refrescar" />
+                    <Label Grid.Row="0"
+                           Grid.Column="0"
+                           Width="70"
+                           Content="Nombre:" />
+                    <TextBox Grid.Row="0"
+                             Grid.Column="1"
+                             Width="180"
+                             Margin="0,0,5,0"
+                             MaxLength="60"
+                             Text="{Binding ProductName,
+                                            UpdateSourceTrigger=PropertyChanged}" />
+
+                    <Label Grid.Row="0"
+                           Grid.Column="2"
+                           Width="80"
+                           Content="Descripción:" />
+                    <TextBox Grid.Row="0"
+                             Grid.Column="3"
+                             Width="180"
+                             Margin="0,0,5,0"
+                             MaxLength="60"
+                             Text="{Binding ProductDescription,
+                                            UpdateSourceTrigger=PropertyChanged}" />
+                </Grid>
+            </Border>
+        </GroupBox>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="{Binding IsOpenWidth, Converter={StaticResource WidthColumnConverter}}" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <DockPanel Grid.Column="0">
+                <Border Height="40"
+                        DockPanel.Dock="Bottom"
+                        Style="{StaticResource BorderBottom}">
+                    <StackPanel HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Orientation="Horizontal">
+                        <Button Width="40"
+                                Height="35"
+                                Margin="2"
+                                Command="{Binding SaveNewEmployee}"
+                                Cursor="Hand"
+                                ToolTip="Guardar Cambios">
+                            <Button.Content>
+                                <Image Source="/Resources/Images/imgSave32.png" Stretch="Fill" />
+                            </Button.Content>
+                        </Button>
+
+                        <Button Width="40"
+                                Height="35"
+                                Margin="2"
+                                Command="{Binding DeleteItem}"
+                                ToolTip="Eliminar Elemento">
+                            <Button.Content>
+                                <Image Source="/Resources/Images/imgDelete32.png" Stretch="Fill" />
+                            </Button.Content>
+                        </Button>
+
+                        <Button Width="40"
+                                Height="35"
+                                Margin="2"
+                                Command="{Binding Clean}"
+                                ToolTip="Nuevo">
+                            <Button.Content>
+                                <Image Source="/Resources/Images/Clean32.png" Stretch="Fill" />
+                            </Button.Content>
+                        </Button>
+
+                    </StackPanel>
+                </Border>
+                <TabControl Grid.Column="0">
+                    <TabItem Header="Producto">
+                        <TabControl>
+                            <TabItem Header="                              ">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="35" />
+                                        <RowDefinition Height="35" />
+                                        <RowDefinition Height="35" />
+                                        <RowDefinition Height="35" />
+                                        <RowDefinition Height="35" />
+                                        <RowDefinition Height="35" />
+                                        <RowDefinition Height="35" />
+                                        <RowDefinition Height="35" />
+                                        <RowDefinition Height="35" />
+                                        <RowDefinition Height="35" />
+                                        <!--<RowDefinition Height="35" />
+                                        <RowDefinition Height="35" />
+                                        <RowDefinition Height="35" />
+                                        <RowDefinition Height="35" />-->
+                                    </Grid.RowDefinitions>
+
+                                    <Label Grid.Row="0"
+                                           Grid.Column="0"
+                                           Content="Modelo:" />
+                                    <ComboBox Grid.Row="0"
+                                              Grid.Column="1"
+                                              Margin="0,0,5,0"
+                                              DisplayMemberPath="FamilyName"
+                                              ItemsSource="{Binding ListFamilies}"
+                                              SelectedValue="{Binding SelectedFamily}"
+                                              SelectedValuePath="Id"
+                                              Style="{StaticResource CmbValue}" />
+
+                                    <Label Grid.Row="1"
+                                           Grid.Column="0"
+                                           Content="Marca:" />
+                                    <ComboBox Grid.Row="1"
+                                              Grid.Column="1"
+                                              Margin="0,0,5,0"
+                                              DisplayMemberPath="TrademarkName"
+                                              ItemsSource="{Binding ListTrademarks}"
+                                              SelectedValue="{Binding SelectedTrademark}"
+                                              SelectedValuePath="Id"
+                                              Style="{StaticResource CmbValue}" />
+
+                                    <Label Grid.Row="2"
+                                           Grid.Column="0"
+                                           Content="Familia:" />
+                                    <ComboBox Grid.Row="2"
+                                              Grid.Column="1"
+                                              Margin="0,0,5,0"
+                                              DisplayMemberPath="Model"
+                                              ItemsSource="{Binding ListModels}"
+                                              SelectedValue="{Binding SelectedModel}"
+                                              SelectedValuePath="Id"
+                                              Style="{StaticResource CmbValue}" />
+
+                                    <Label Grid.Row="3"
+                                           Grid.Column="0"
+                                           Content="Moneda:" />
+                                    <ComboBox Grid.Row="3"
+                                              Grid.Column="1"
+                                              Margin="0,0,5,0"
+                                              DisplayMemberPath="CoinName"
+                                              ItemsSource="{Binding ListCoins}"
+                                              SelectedValue="{Binding SelectedCoin}"
+                                              SelectedValuePath="Id"
+                                              Style="{StaticResource CmbValue}" />
+
+                                    <Label Grid.Row="4"
+                                           Grid.Column="0"
+                                           Content="Clave del Proveedor:" />
+                                    <TextBox Grid.Row="4"
+                                             Grid.Column="1"
+                                             Margin="0,0,5,0"
+                                             MaxLength="50"
+                                             Text="{Binding Providers,
+                                                            UpdateSourceTrigger=PropertyChanged,
+                                                            Mode=TwoWay}" />
+
+                                    <Label Grid.Row="5"
+                                           Grid.Column="0"
+                                           Content="Clave Teknobike:" />
+                                    <TextBox Grid.Row="5"
+                                             Grid.Column="1"
+                                             Margin="0,0,5,0"
+                                             MaxLength="50"
+                                             Text="{Binding TeknobikeKey,
+                                                            UpdateSourceTrigger=PropertyChanged,
+                                                            Mode=TwoWay}" />
+
+                                    <Label Grid.Row="6"
+                                           Grid.Column="0"
+                                           Content="Sku:" />
+                                    <TextBox Grid.Row="6"
+                                             Grid.Column="1"
+                                             Margin="0,0,5,0"
+                                             MaxLength="50"
+                                             Text="{Binding Sku,
+                                                            UpdateSourceTrigger=PropertyChanged,
+                                                            Mode=TwoWay}" />
+
+                                    <Label Grid.Row="7"
+                                           Grid.Column="0"
+                                           Content="Nombre:" />
+                                    <TextBox Grid.Row="7"
+                                             Grid.Column="1"
+                                             Margin="0,0,5,0"
+                                             MaxLength="100"
+                                             Text="{Binding Name,
+                                                            UpdateSourceTrigger=PropertyChanged,
+                                                            Mode=TwoWay}" />
+
+                                    <Label Grid.Row="8"
+                                           Grid.Column="0"
+                                           Content="Descripción:" />
+                                    <TextBox Grid.Row="8"
+                                             Grid.Column="1"
+                                             Margin="0,0,5,0"
+                                             Text="{Binding Description,
+                                                            UpdateSourceTrigger=PropertyChanged,
+                                                            Mode=TwoWay}" />
+
+                                    <Label Grid.Row="9"
+                                           Grid.Column="0"
+                                           Content="Precio Mayoreo:" />
+                                    <TextBox Grid.Row="9"
+                                             Grid.Column="1"
+                                             Margin="0,0,5,0"
+                                             Text="{Binding Wholesale,
+                                                            UpdateSourceTrigger=PropertyChanged,
+                                                            Mode=TwoWay}" />
+
+                                </Grid>
+                            </TabItem>
+                            <TabItem Header="                              ">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="35" />
+                                        <RowDefinition Height="35" />
+                                        <RowDefinition Height="35" />
+                                        <RowDefinition Height="35" />
+                                    </Grid.RowDefinitions>
+
+                                    <Label Grid.Row="0"
+                                           Grid.Column="0"
+                                           Content="Precio Publico:" />
+                                    <TextBox Grid.Row="0"
+                                             Grid.Column="1"
+                                             Margin="0,0,5,0"
+                                             Text="{Binding PublicPrice,
+                                                            UpdateSourceTrigger=PropertyChanged,
+                                                            Mode=TwoWay}" />
+
+                                    <Label Grid.Row="1"
+                                           Grid.Column="0"
+                                           Content="Costo:" />
+                                    <TextBox Grid.Row="1"
+                                             Grid.Column="1"
+                                             Margin="0,0,5,0"
+                                             Text="{Binding Cost,
+                                                            UpdateSourceTrigger=PropertyChanged,
+                                                            Mode=TwoWay}" />
+
+                                    <Label Grid.Row="2"
+                                           Grid.Column="0"
+                                           Content="Piezas" />
+                                    <TextBox Grid.Row="2"
+                                             Grid.Column="1"
+                                             Margin="0,0,5,0"
+                                             Text="{Binding Pieces,
+                                                            UpdateSourceTrigger=PropertyChanged,
+                                                            Mode=TwoWay}" />
+                                </Grid>
+                            </TabItem>
+                        </TabControl>
+                    </TabItem>
+                </TabControl>
+            </DockPanel>
+
+            <Button Grid.Column="1"
+                    Width="10"
+                    Height="100"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Command="{Binding OpenWidthCommand}">
+                <Button.Content>
+                    <Image Width="10"
+                           Height="100"
+                           Source="/Resources/Images/Open.png" />
+                </Button.Content>
+            </Button>
+
+            <DataGrid x:Name="grdMain"
+                      Grid.Column="2"
+                      Margin="0,5,0,0"
+                      AutoGenerateColumns="False"
+                      CanUserAddRows="False"
+                      ItemsSource="{Binding ProductList,
+                                            Mode=TwoWay,
+                                            IsAsync=True}">
+                <!--<i:Interaction.Triggers>
+                    <i:EventTrigger EventName="PreviewMouseDown">
+                        <i:InvokeCommandAction Command="{Binding SelectedITemGridClick}"
+                                               CommandParameter="{Binding ElementName=grdMain,Path=SelectedItem}">
+                        </i:InvokeCommandAction>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>-->
+
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="PreviewMouseDown">
+                        <mvvm:EventToCommand Command="{Binding SelectedITemGridClick}" CommandParameter="{Binding EventArgs, RelativeSource={RelativeSource Self}}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="0.5*"
+                                        Binding="{Binding Name}"
+                                        Header="Producto" />
+                    <DataGridTextColumn Width="*"
+                                        Binding="{Binding Description}"
+                                        Header="Descripción" />
+                    <DataGridTextColumn Width="0.6*"
+                                        Binding="{Binding TrademarkName}"
+                                        Header="Marca" />
+
+                    <DataGridTextColumn Width="0.4*"
+                                        Binding="{Binding Cost}"
+                                        Header="Costo">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                                <Setter Property="VerticalAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="0.4*"
+                                        Binding="{Binding Wholesale}"
+                                        Header="P. Mayoreo">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                                <Setter Property="VerticalAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="0.4*"
+                                        Binding="{Binding MediumWholesale}"
+                                        Header="P. Medio May.">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                                <Setter Property="VerticalAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="0.4*"
+                                        Binding="{Binding PublicPrice}"
+                                        Header="P. Público">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                                <Setter Property="VerticalAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Width="100"
+                                        Binding="{Binding Pieces}"
+                                        Header="Piezas">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                                <Setter Property="VerticalAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </Grid>
+
+    </DockPanel>
+</UserControl>

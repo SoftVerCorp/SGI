@@ -1,0 +1,282 @@
+﻿<Window x:Class="SGI.View.Inventarios.VisorTraspasos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:bsFilter="http://schemas.bolapansoft.com/xaml/Controls/ItemsFilter"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:mvvm="clr-namespace:SGI.Stuffs"
+        Title="Consulta de traspasos"
+        Width="1100"
+        Height="688">
+    <Window.Resources>
+        <ResourceDictionary Source="/Resources/Styles/ItemsFilterStyle.xaml" />
+    </Window.Resources>
+
+    <DockPanel>
+
+        <GroupBox Margin="2"
+                  DockPanel.Dock="Top"
+                  Header="Filtros">
+
+
+            <Grid Height="130" Margin="2,5,2,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="200" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0"
+                       Grid.Column="0"
+                       HorizontalAlignment="Left"
+                       Content="Fecha Inicial:" />
+                <DatePicker Grid.Row="0"
+                            Grid.Column="1"                          
+                            Height="30"
+                            Margin="5,2,5,2"
+                            SelectedDate="{Binding FechaInicial}"
+                            Style="{StaticResource styleDatePicker}" />
+
+                <Label Grid.Row="0"
+                       Grid.Column="2"
+                       HorizontalContentAlignment="Center"
+                       Content="Fecha Final:" />
+
+                <DatePicker Grid.Row="0"
+                            Grid.Column="3"
+                            Width="150"
+                            Height="30"
+                            Margin="5,2,5,2"
+                            SelectedDate="{Binding FechaFinal,
+                                                   Mode=TwoWay}"
+                            Style="{StaticResource styleDatePicker}" />
+
+                <Label Grid.Row="0"
+                       Grid.Column="4"
+                       HorizontalContentAlignment="Center"
+                       Content="Ubicación Origen:" />
+
+                <ComboBox Grid.Row="0"
+                          Grid.Column="5"
+                          Width="150"
+                          Height="35"
+                          Margin="2"
+                          DisplayMemberPath="Nombre"
+                          ItemsSource="{Binding Ubicaciones}"
+                          SelectedValue="{Binding IdUbicacion}"
+                          SelectedValuePath="Id" />
+
+
+                <!--<Label Grid.Row="1"
+                       Grid.Column="0"
+                       HorizontalAlignment="Left"
+                       Content="Tipo Traspaso:" />-->
+
+                <!--<ComboBox Grid.Row="1"
+                          Grid.Column="1"                         
+                          Height="35"
+                          Margin="2"
+                          ItemsSource="{Binding TiposTraspaso}"
+                          SelectedValue="{Binding TipoSeleccionado}"
+                          SelectedValuePath="Id" />-->
+
+                <Label Grid.Row="1"
+                       Grid.Column="0"
+                       HorizontalContentAlignment="Center"
+                       Content="Guia:" />
+
+                <TextBox Grid.Row="1"
+                         Grid.Column="1"
+                         Grid.ColumnSpan="3"
+                         Text="{Binding Guia,
+                                        Mode=TwoWay}" />
+
+                <StackPanel Grid.Row="2"
+                            Grid.ColumnSpan="6"
+                            Orientation="Horizontal">
+                    <Button Width="120"
+                            Height="35"
+                            Margin="2"
+                            HorizontalAlignment="Left"
+                            Command="{Binding BuscarCmd}"
+                            Content="Buscar" />
+                    <Button Width="120"
+                            Height="35"
+                            Margin="2"
+                            HorizontalAlignment="Left"
+                            Command="{Binding LimpiarCmd}"
+                            Content="Limpiar" />
+
+                    <Button Width="120"
+                            Height="35"
+                            Margin="2,0,0,0"
+                            HorizontalAlignment="Left"
+                            Command="{Binding RecibirCmd}"
+                            Content="Recibir Productos" />
+
+                    <Button 
+                            Width="100"
+                           Height="35"
+                            Margin="2"
+                            HorizontalAlignment="Right"                           
+                            Content="Exportar"   Command="{Binding ExportarCmd}"
+                            ToolTip="Exportar a Excel"
+                            Visibility="{Binding IsModeAuto}" />
+
+                </StackPanel>
+
+            </Grid>
+        </GroupBox>
+
+        <!--<Border></Border>-->
+        <!--<Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="80" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>-->
+
+
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>                
+            </Grid.ColumnDefinitions>
+
+            <bsFilter:FilterDataGrid x:Name="dgSuppliers"
+                                Grid.Column="0"
+                                 Margin="5,0,5,5"
+                                 AutoGenerateColumns="False"
+                                 Background="Silver"
+                                 CanUserAddRows="False"
+                                 CanUserResizeRows="True"
+                                 ItemsSource="{Binding MovInventario,
+                                                       IsAsync=True}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="PreviewMouseDown">
+                        <mvvm:EventToCommand Command="{Binding SelectedITemGridClick}" CommandParameter="{Binding EventArgs, RelativeSource={RelativeSource Self}}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                <!--<i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDoubleClick">
+                    <mvvm:EventToCommand Command="{Binding SelectedITemGridClick}" CommandParameter="{Binding EventArgs, RelativeSource={RelativeSource Self}}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>-->
+
+                <DataGrid.Columns>
+
+                    <DataGridTextColumn Width="*"
+                                    Binding="{Binding FechaSalida}"
+                                    CanUserResize="True"
+                                    Header="Fecha Salida"
+                                    IsReadOnly="True" />
+
+                    <DataGridTextColumn Width="*"
+                                    Binding="{Binding Guia}"
+                                    CanUserResize="True"
+                                    Header="Guia"
+                                    IsReadOnly="True" />
+
+
+
+                    <DataGridTextColumn Width="*"
+                                    Binding="{Binding Origen}"
+                                    CanUserResize="True"
+                                    Header="Origen"
+                                    IsReadOnly="True" />
+                    
+                    <DataGridTextColumn Width="*"
+                                    Binding="{Binding Destino}"
+                                    CanUserResize="True"
+                                    Header="Destino"
+                                    IsReadOnly="True" />
+
+                    <DataGridTextColumn Width="*"
+                                    Binding="{Binding Paqueteria}"
+                                    CanUserResize="True"
+                                    Header="Paqueteria"
+                                    IsReadOnly="True" />
+
+
+
+
+
+
+
+
+
+
+                </DataGrid.Columns>
+
+            </bsFilter:FilterDataGrid>
+
+            <DockPanel Grid.Column="1">
+                <Label Content="Detalle" DockPanel.Dock="Top" HorizontalContentAlignment="Center" Margin="2"/>
+            <bsFilter:FilterDataGrid 
+                                Grid.Column="1"
+                                 Margin="5,0,5,5"
+                                 AutoGenerateColumns="False"
+                                 Background="Silver"
+                                 CanUserAddRows="False"
+                                 CanUserResizeRows="True"
+                                 ItemsSource="{Binding MovInventarioDetalle,
+                                                       IsAsync=True}">
+
+                <!--<i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDoubleClick">
+                    <mvvm:EventToCommand Command="{Binding SelectedITemGridClick}" CommandParameter="{Binding EventArgs, RelativeSource={RelativeSource Self}}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>-->
+
+                <DataGrid.Columns>                
+
+                   
+                   
+
+                    <DataGridTextColumn Width="*"
+                                    Binding="{Binding Producto}"
+                                    CanUserResize="True"
+                                    Header="Producto"
+                                    IsReadOnly="True" />
+
+                    <DataGridTextColumn Width="100"
+                                    Binding="{Binding CantidadDisponible}"
+                                    CanUserResize="True"
+                                    Header="Cantidad"
+                                    IsReadOnly="True" />
+
+
+                    <DataGridTextColumn Width="auto"
+                                    Binding="{Binding Pedimento}"
+                                    CanUserResize="True"
+                                    Header="Pedimento"
+                                    IsReadOnly="True" />
+
+                 
+
+                </DataGrid.Columns>
+
+            </bsFilter:FilterDataGrid>
+            </DockPanel>
+
+        </Grid>
+
+      
+        <!--</Grid>-->
+    </DockPanel>
+</Window>

@@ -1,0 +1,29 @@
+﻿<Window x:Class="SGI.View.DialogsInformation.OrderBuyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"       
+        xmlns:controls="clr-namespace:SGI.View.DialogsInformation"
+        Title="Consultar Ordenes de compra" Height="660" Top="6" Width="{x:Static SystemParameters.PrimaryScreenWidth}" WindowStartupLocation="CenterScreen"        
+        Style="{StaticResource WindowDialog}" x:Name="orderBuysWindow" >
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding Loaded}" CommandParameter="{Binding ElementName=orderBuysWindow}">
+            </i:InvokeCommandAction>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <DockPanel>
+        <Border DockPanel.Dock="Bottom" Style="{StaticResource BorderBottom}" >
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button IsDefault="True"  Content="Aceptar" Command="{Binding Accept}" Style="{StaticResource ButtonApp}" />
+                <Button IsCancel="True" Content="Cancelar" Command="{Binding Close}" Style="{StaticResource ButtonApp}" />
+            </StackPanel>
+        </Border>
+       
+            <Border >
+                <controls:ViewOrderBuy 
+                                       DataContext="{Binding ViewOrderBuyVM}"/>
+            </Border>
+       
+    </DockPanel>
+</Window>
+

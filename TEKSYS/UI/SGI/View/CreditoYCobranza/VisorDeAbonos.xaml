@@ -1,0 +1,211 @@
+﻿<Window x:Class="SGI.View.CreditoYCobranza.VisorDeAbonos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:bsFilter="http://schemas.bolapansoft.com/xaml/Controls/ItemsFilter"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:mvvm="clr-namespace:SGI.Stuffs"
+        xmlns:combo2="http://wpfcontrols.com/"
+        xmlns:wpfext="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:combo="clr-namespace:SGI.AutoCombo"
+        Title="VisorDeAbonos" WindowState="Maximized" Height="{x:Static SystemParameters.PrimaryScreenHeight}" Width="{x:Static SystemParameters.PrimaryScreenWidth}">
+    <Window.Resources>
+        <combo:ClientSuggest x:Key="ClientesProvider" />
+
+        <DataTemplate x:Key="clienteTemplate">
+            <Border Padding="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Image Grid.RowSpan="2"
+                           Width="32"
+                           Height="32"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Source="/Resources/Images/cliente.png"/>
+                    <TextBlock Text="{Binding Path=NombreFiscal}"
+                               FontWeight="Bold" 
+                               Grid.Column="1" 
+                               Grid.Row="0"
+                               FontFamily="Segoe UI" Background="White"
+                               VerticalAlignment="Bottom" Foreground="Black"/>
+                    <TextBlock Text="{Binding Path=NombreComercial}"
+                               Grid.Column="1"
+                               Grid.Row="1"  Background="White"
+                               VerticalAlignment="Top" Foreground="Gray"/>
+                </Grid>
+            </Border>
+        </DataTemplate>
+
+    
+    </Window.Resources>
+    <DockPanel>
+        <GroupBox DockPanel.Dock="Top" Height="150" Header="Filtros">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" 
+                       Grid.Column="0"
+                       HorizontalContentAlignment="Left"
+                       Content="Cliente:" />
+
+
+                <combo2:AutoCompleteTextBox VerticalAlignment="Center" 
+                                 Grid.Row="0"
+                                 Grid.Column="1" Grid.ColumnSpan="5"                         
+                                 Height="35" 
+                                 DisplayMember="NombreFiscal"
+                                 ItemTemplate="{StaticResource clienteTemplate}"
+                                 Watermark="Buscar por nombre"
+                                 IconPlacement="Left"
+                                 IconVisibility="Visible"
+                                 Provider="{StaticResource ResourceKey=ClientesProvider}"
+                                 x:Name="Actb"
+                                 Focusable="True"
+                                            
+                                 >
+                    <combo2:AutoCompleteTextBox.SelectedItem>
+                        <Binding Path="SelectedCliente" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <combo:RequiredValidationRule/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </combo2:AutoCompleteTextBox.SelectedItem>
+                    <combo2:AutoCompleteTextBox.LoadingContent>
+                        <TextBlock Text="Cargando..."
+                           Margin="5"  Background="White"
+                           FontSize="14"  Foreground="Black"/>
+                    </combo2:AutoCompleteTextBox.LoadingContent>
+                    <combo2:AutoCompleteTextBox.Icon>
+                        <Border Width="20" Height="20">
+                            <Image Source="/Resources/Images/search_icon.png"
+                                   Height="16"
+                                   Width="16"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center" />
+                        </Border>
+                    </combo2:AutoCompleteTextBox.Icon>
+                </combo2:AutoCompleteTextBox>
+                
+                <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="5">
+                    <Button Content="Buscar" Margin="2" Width="100" Height="35" />
+                    <Button Content="Limpiar" Margin="2" Width="100" Height="35" />
+                </StackPanel>
+                
+            </Grid>
+        </GroupBox>
+        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Adeudos}">
+            <DataGrid.RowStyle>
+                <Style TargetType="{x:Type DataGridRow}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Path=Pintar}" Value="True">
+                            <Setter Property="Background" Value="#FF0000" />
+                            <Setter Property="Foreground" Value="White" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                  
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Clave" Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="{Binding IdCliente}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Nombre" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="{Binding Nombre}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Telefono" Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="{Binding Telefono}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Clasificacion" Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="{Binding TipoDeCliente}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Limite Credito $" Width="120">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="{Binding LimiteDeCredito}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Saldo" Width="120">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="{Binding IdCliente}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Saldo Vencido" Width="120">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="{Binding SaldoVencido}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Docs. por Cobrar" Width="130">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="{Binding DocumentosPorCobrar}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Vencidos" Width="120">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="{Binding DocumentosVencidos}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Documentos" Width="120">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="{Binding Documentos}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+</Window>

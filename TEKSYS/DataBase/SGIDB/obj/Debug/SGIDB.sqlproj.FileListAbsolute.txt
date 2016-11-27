@@ -1,0 +1,57 @@
+C:\Users\franz\Documents\SGI Versiones\V2\SGI12\SGI\DataBase\SGIDB\bin\Debug\SGIDB.dacpac
+C:\Users\franz\Documents\SGI Versiones\V2\SGI12\SGI\DataBase\SGIDB\bin\Debug\SGIDB.dll
+C:\Users\franz\Documents\SGI Versiones\V2\SGI12\SGI\DataBase\SGIDB\bin\Debug\SGIDB.pdb
+C:\Users\franz\Documents\SGI Versiones\V2\SGI12\SGI\DataBase\SGIDB\obj\Debug\Model.xml
+C:\Users\franz\Documents\SGI Versiones\V2\SGI12\SGI\DataBase\SGIDB\obj\Debug\refactor.xml
+C:\Users\franz\Documents\SGI Versiones\V2\SGI12\SGI\DataBase\SGIDB\obj\Debug\postdeploy.sql
+C:\Users\franz\Documents\SGI Versiones\V2\SGI12\SGI\DataBase\SGIDB\obj\Debug\predeploy.sql
+C:\Users\franz\Documents\SGI Versiones\V2\SGI12\SGI\DataBase\SGIDB\obj\Debug\SGIDB.dll
+C:\Users\franz\Documents\SGI Versiones\V2\SGI12\SGI\DataBase\SGIDB\obj\Debug\SGIDB.pdb
+C:\Users\Ruben\Documents\SGIVersiones\SGI\DataBase\SGIDB\bin\Debug\SGIDB.dacpac
+C:\Users\Ruben\Documents\SGIVersiones\SGI\DataBase\SGIDB\obj\Debug\Model.xml
+C:\Users\Ruben\Documents\SGIVersiones\SGI\DataBase\SGIDB\obj\Debug\refactor.xml
+C:\Users\Ruben\Documents\SGIVersiones\SGI\DataBase\SGIDB\obj\Debug\postdeploy.sql
+C:\Users\Ruben\Documents\SGIVersiones\SGI\DataBase\SGIDB\obj\Debug\predeploy.sql
+C:\Users\Ruben\Documents\SGIVersiones\SGI\DataBase\SGIDB\obj\Debug\SGIDB.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\DataBase\SGIDB\obj\Debug\SGIDB.pdb
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\DataBase\SGIDB\bin\Debug\SGIDB.dacpac
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\DataBase\SGIDB\obj\Debug\Model.xml
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\DataBase\SGIDB\obj\Debug\refactor.xml
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\DataBase\SGIDB\obj\Debug\postdeploy.sql
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\DataBase\SGIDB\obj\Debug\predeploy.sql
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\DataBase\SGIDB\obj\Debug\SGIDB.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\DataBase\SGIDB\obj\Debug\SGIDB.pdb
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\DataBase\SGIDB\bin\Debug\SGIDB.dacpac
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\DataBase\SGIDB\bin\Debug\SGIDB.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\DataBase\SGIDB\bin\Debug\SGIDB.pdb
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\DataBase\SGIDB\obj\Debug\Model.xml
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\DataBase\SGIDB\obj\Debug\refactor.xml
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\DataBase\SGIDB\obj\Debug\postdeploy.sql
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\DataBase\SGIDB\obj\Debug\predeploy.sql
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\DataBase\SGIDB\obj\Debug\SGIDB.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\DataBase\SGIDB\obj\Debug\SGIDB.pdb
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\DataBase\SGIDB\bin\Debug\SGIDB.dacpac
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\DataBase\SGIDB\obj\Debug\Model.xml
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\DataBase\SGIDB\obj\Debug\refactor.xml
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\DataBase\SGIDB\obj\Debug\postdeploy.sql
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\DataBase\SGIDB\obj\Debug\predeploy.sql
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\DataBase\SGIDB\obj\Debug\SGIDB.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\DataBase\SGIDB\obj\Debug\SGIDB.pdb
+C:\VTEKSYS\TEKSYS\DataBase\SGIDB\bin\Debug\SGIDB.dacpac
+C:\VTEKSYS\TEKSYS\DataBase\SGIDB\bin\Debug\SGIDB.dll
+C:\VTEKSYS\TEKSYS\DataBase\SGIDB\bin\Debug\SGIDB.pdb
+C:\VTEKSYS\TEKSYS\DataBase\SGIDB\obj\Debug\Model.xml
+C:\VTEKSYS\TEKSYS\DataBase\SGIDB\obj\Debug\refactor.xml
+C:\VTEKSYS\TEKSYS\DataBase\SGIDB\obj\Debug\postdeploy.sql
+C:\VTEKSYS\TEKSYS\DataBase\SGIDB\obj\Debug\predeploy.sql
+C:\VTEKSYS\TEKSYS\DataBase\SGIDB\obj\Debug\SGIDB.dll
+C:\VTEKSYS\TEKSYS\DataBase\SGIDB\obj\Debug\SGIDB.pdb
+C:\Proyectos_Alternos\TEKSYS\DataBase\SGIDB\bin\Debug\SGIDB.dacpac
+C:\Proyectos_Alternos\TEKSYS\DataBase\SGIDB\bin\Debug\SGIDB.dll
+C:\Proyectos_Alternos\TEKSYS\DataBase\SGIDB\bin\Debug\SGIDB.pdb
+C:\Proyectos_Alternos\TEKSYS\DataBase\SGIDB\obj\Debug\Model.xml
+C:\Proyectos_Alternos\TEKSYS\DataBase\SGIDB\obj\Debug\refactor.xml
+C:\Proyectos_Alternos\TEKSYS\DataBase\SGIDB\obj\Debug\postdeploy.sql
+C:\Proyectos_Alternos\TEKSYS\DataBase\SGIDB\obj\Debug\predeploy.sql
+C:\Proyectos_Alternos\TEKSYS\DataBase\SGIDB\obj\Debug\SGIDB.dll
+C:\Proyectos_Alternos\TEKSYS\DataBase\SGIDB\obj\Debug\SGIDB.pdb

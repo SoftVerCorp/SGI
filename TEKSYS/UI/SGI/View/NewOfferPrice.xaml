@@ -1,0 +1,77 @@
+﻿<Window x:Class="SGI.View.NewOfferPrice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        Title="{Binding TitleWindow}" Height="330" Width="400" WindowStartupLocation="CenterScreen"        
+        Style="{StaticResource WindowDialog}" x:Name="newOfferPrice" >
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding Loaded}" CommandParameter="{Binding ElementName=newOfferPrice}">
+            </i:InvokeCommandAction>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <DockPanel>
+        <Label  DockPanel.Dock="Top" Content="{Binding TitleWindow}" Style="{StaticResource LabelTitle}"/>
+        <Border DockPanel.Dock="Bottom" Style="{StaticResource BorderBottom}" >
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button IsDefault="True" Content="Aceptar" Command="{Binding Accept}" Style="{StaticResource ButtonApp}" />
+                <Button IsCancel="True"  Content="Cancelar" Command="{Binding Close}" Style="{StaticResource ButtonApp}" />
+            </StackPanel>
+        </Border>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="auto"/>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition Height="auto"/>
+           </Grid.RowDefinitions>
+           
+            <Label   Content="Producto:" Grid.Row="1" Grid.Column="0" />
+            <TextBox Grid.Row="1"  Grid.Column="1"  IsReadOnly="True"  MaxLength="60"
+                     Text="{Binding ProductName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Grid.ColumnSpan="2" Margin="0,0,5,0"/>
+            <Button Content="..." Grid.Column="2" Grid.Row="1" ToolTip="Elegir Producto"  
+                    Width="30" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2,2,5,2"
+                     Command="{Binding OpenProduct}" />                 
+            
+            <Label   Content="Oferta:" Grid.Row="2" Grid.Column="0" />
+            <TextBox Grid.Row="2"  Grid.Column="1"   MaxLength="60"
+                     Text="{Binding OfferTypeName, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2" Margin="0,0,5,0"/>
+            <Button Content="..." Grid.Column="2" Grid.Row="2" ToolTip="Elegir tipo de oferta"  
+                    Width="30" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2,2,5,2"
+                     Command="{Binding OpenOfferType}" />
+
+            <Label   Content="Precio:" Grid.Row="3" Grid.Column="0" />
+            <TextBox Grid.Row="3"  Grid.Column="1"  
+                     Text="{Binding Price, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Grid.ColumnSpan="2" Margin="0,0,5,0"
+                      PreviewTextInput="TextBox_PreviewTextInput"/>
+
+            <Label   Content="Inicio" Grid.Row="4" Grid.Column="0" />
+            <DatePicker Grid.Row="4"  SelectedDate="{Binding BeginDate}" Style="{StaticResource styleDatePicker}"
+                        Grid.Column="1" 
+                        Margin="0 1 10 1" Height="35" Grid.ColumnSpan="2" FontSize="16" Padding="0" />
+
+
+            <!--<TextBox Grid.Row="4"  Grid.Column="1"   MaxLength="60"
+                     Text="{Binding TypeOfferName, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2"/>-->
+
+            <Label   Content="Fecha Final" Grid.Row="5" Grid.Column="0" />
+            <DatePicker Grid.Row="5"  SelectedDate="{Binding EndDate}" Style="{StaticResource styleDatePicker}"
+                        Grid.Column="1" Margin="0 1 10 1" Height="35" Grid.ColumnSpan="2" FontSize="16" Padding="0" />
+
+            <!--<TextBox Grid.Row="5"  Grid.Column="1"   MaxLength="60"
+                     Text="{Binding TypeOfferName, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2"/>-->
+
+            <!--<CheckBox Content="Oferta Activa"  IsChecked="{Binding IsActive, Mode=TwoWay}"
+                      Grid.Row="6" Grid.Column="0" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>-->
+        </Grid>
+    </DockPanel>
+</Window>
+

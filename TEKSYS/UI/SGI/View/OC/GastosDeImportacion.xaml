@@ -1,0 +1,274 @@
+﻿<Window x:Class="SGI.View.OC.GastosDeImportacion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:mvvm="clr-namespace:SGI.Stuffs"
+        xmlns:bsFilter="http://schemas.bolapansoft.com/xaml/Controls/ItemsFilter"
+        Title="GastosDeImportacion" Height="600" Width="800" x:Name="gtsImportacion">
+    <!--<Window.Resources>
+        <ResourceDictionary Source="/Resources/Styles/ItemsFilterStyle.xaml" />
+    </Window.Resources>-->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />            
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0"
+                Grid.Column="0"
+                Height="7"
+                Background="Gray"
+                Visibility="{Binding IsModeSearch}" />
+
+        <ScrollViewer Grid.Row="1"
+                      Grid.Column="0"
+                      Margin="5,10,5,2"
+                      VerticalScrollBarVisibility="Auto">
+            <GroupBox Header="Gastos de Importación">
+                <StackPanel Orientation="Vertical">
+                    <Grid Height="120">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition  Width="auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition  />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Label Content="Agente Aduanal:" Grid.Row="0" Grid.Column="0" />
+                        <ComboBox Margin="5,0,0,0" Grid.Column="1" Grid.Row="0"  Width="200" Height="35" ItemsSource="{Binding Agentes}"
+                                  DisplayMemberPath="Nombre" SelectedValuePath="Id" SelectedValue="{Binding AgenteSeleccionado}" />
+
+                        <Label Content="Numero de cuenta:" Grid.Row="0" Grid.Column="2" />
+                        <TextBox  Text="{Binding NoCuenta}"
+                            Grid.Row="0" Grid.Column="3" Width="200" HorizontalAlignment="Left" Margin="5,0,0,0" />
+
+                        <Label Content="Orden de Compra:" Grid.Row="1" Grid.Column="0" />
+                        <TextBox Grid.Row="1" Grid.Column="1" IsReadOnly="True" Width="200"
+                                 HorizontalAlignment="Left" Margin="5,0,0,0" Text="{Binding OrdenDeCompra}" />
+
+                        <Label Content="Fecha:" Grid.Row="1" Grid.Column="2" />
+                        <DatePicker SelectedDate="{Binding Fecha}" Grid.Row="1" Grid.Column="3" Style="{StaticResource styleDatePicker}" />
+
+                        <Label Content="Gasto de Import.:" Grid.Row="2" Grid.Column="0" />
+                        <ComboBox Grid.Column="1" Grid.Row="2" Margin="5,0,0,0"  Width="200" Height="35" ItemsSource="{Binding Conceptos}"
+                                  DisplayMemberPath="Concepto" SelectedValuePath="Id" SelectedValue="{Binding ConceptoSeleccionado}" />
+
+                        <Button Width="100"
+                                Height="35"
+                                Margin="2"
+                                Command="{Binding AgregarGastoImportacionCmd}"
+                                Cursor="Hand" Content="Añadir" Grid.Row="2" Grid.Column="2"
+                               >
+                           
+                        </Button>
+
+                        <!--<Label Content="Concepto:" />
+                        <TextBox Grid.Column="1"
+                             Width="300"
+                             MaxLength="100"
+                             Text="{Binding Concepto,
+                                            Mode=TwoWay,
+                                            UpdateSourceTrigger=PropertyChanged}" />-->
+
+
+
+
+                    </Grid>
+
+                    <Border Margin="5 15 0 0">
+                        <StackPanel Orientation="Horizontal">
+                            <Button Width="40"
+                                Height="35"
+                                Margin="2"
+                                Command="{Binding AgregarNuevoGastoImportacionCmd}"
+                                Cursor="Hand"
+                                ToolTip="Guardar Cambios">
+                                <Button.Content>
+                                    <Image Source="/Resources/Images/imgSave32.png" Stretch="Fill" />
+                                </Button.Content>
+                            </Button>
+                            <!--<Button Width="40"
+                                Height="35"
+                                Margin="2"
+                                Command="{Binding EliminarConceptoCmd}"                               
+                                ToolTip="Eliminar Elemento">
+                                <Button.Content>
+                                    <Image Source="/Resources/Images/imgDelete32.png" Stretch="Fill" />
+                                </Button.Content>
+                            </Button>-->
+                            <Button Width="40"
+                                Height="35"
+                                Margin="2"
+                                Command="{Binding Clean}"
+                                ToolTip="Nuevo">
+                                <Button.Content>
+                                    <Image Source="/Resources/Images/Clean32.png" Stretch="Fill" />
+                                </Button.Content>
+                            </Button>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </GroupBox>
+        </ScrollViewer>
+        <GridSplitter Grid.Row="2"
+                      Grid.Column="0"
+                      Height="7"
+                      Margin="1 3 1 1"
+                      HorizontalAlignment="Stretch"
+                      Background="Gray" />
+
+    
+        <bsFilter:FilterDataGrid x:Name="dgAgentes"
+                  Grid.Row="3"
+                  Grid.Column="0"
+                  MinHeight="200"
+                  Margin="2,5,2,5"
+                  AutoGenerateColumns="False"
+                  Background="Silver"
+                  CanUserAddRows="False"
+                  CanUserResizeRows="True"
+                  ItemsSource="{Binding GastosDetalle,
+                                        IsAsync=True}">
+
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="PreviewMouseDown">
+                    <mvvm:EventToCommand Command="{Binding SelectedITemGridClick}" CommandParameter="{Binding EventArgs, RelativeSource={RelativeSource Self}}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Width="*"
+                                    Binding="{Binding Concepto}"
+                                    CanUserResize="True"
+                                    Header="Concepto"
+                                    IsReadOnly="True" />
+
+                <DataGridTemplateColumn Width="0.5*"
+                                                CanUserResize="True"
+                                                Header="Costo Est. "
+                                                IsReadOnly="False"
+                                                >
+
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Margin="1,1,4,1"
+                                              HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                                               Text="{Binding CostoEstimado, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <TextBox Margin="1,1,1,1"   HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                                     Text="{Binding CostoEstimado, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="Loaded">
+                                        <mvvm:TakeFocusAndSelectTextOnVisibleBehavior />
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </TextBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
+
+                    <DataGridTemplateColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="IsEditing" Value="True" />
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#ff9900" />
+                                    <Setter Property="Foreground" Value="Black" />
+                                    <Setter Property="BorderBrush" Value="Transparent" />
+                                    <Setter Property="BorderThickness" Value="0" />
+                                </Trigger>                               
+                            </Style.Triggers>
+                        </Style>
+                    </DataGridTemplateColumn.CellStyle>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Width="*" Header="Fecha Costo Estimado">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <DatePicker Style="{DynamicResource styleDatePicker}" SelectedDate="{Binding FechaCostoEstimado,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Width="0.5*"
+                                                CanUserResize="True"
+                                                Header="Costo Real "
+                                                IsReadOnly="False"
+                                                >
+
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Margin="1,1,4,1"
+                                              HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                                               Text="{Binding CostoReal,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <TextBox Margin="1,1,1,1"   HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                                     Text="{Binding CostoReal, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="Loaded">
+                                        <mvvm:TakeFocusAndSelectTextOnVisibleBehavior />
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </TextBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
+
+                    <DataGridTemplateColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="IsEditing" Value="True" />
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#ff9900" />
+                                    <Setter Property="Foreground" Value="Black" />
+                                    <Setter Property="BorderBrush" Value="Transparent" />
+                                    <Setter Property="BorderThickness" Value="0" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGridTemplateColumn.CellStyle>
+                </DataGridTemplateColumn>           
+
+
+                <DataGridTemplateColumn Width="*" Header="Fecha Costo Real">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <DatePicker Style="{DynamicResource styleDatePicker}" SelectedDate="{Binding FechaCostoReal,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Width="0.5*" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Command="{Binding ElementName=gtsImportacion, Path=DataContext.EliminarGastoImportacionCmd}"
+                                    CommandParameter="{Binding}">
+                                <Image Width="25" Height="30" Source="/Resources/Images/imgDelete32.png" Stretch="Fill" />
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+            </DataGrid.Columns>
+
+        </bsFilter:FilterDataGrid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,381 @@
+﻿<Window x:Class="SGI.View.Inventarios.TransferenciaDeInventario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:bsFilter="http://schemas.bolapansoft.com/xaml/Controls/ItemsFilter"
+        xmlns:combo="clr-namespace:SGI.AutoCombo"
+        xmlns:combo2="http://wpfcontrols.com/"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:mvvm="clr-namespace:SGI.Stuffs"
+        Title="Transferencia De Inventario" x:Name="viewTransferInv"
+        Width="850"
+        Height="688">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/Styles/ItemsFilterStyle.xaml" />
+                <ResourceDictionary Source="/Resources/Templates.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <DockPanel>
+        <GroupBox Margin="2"
+                  DockPanel.Dock="Top"
+                  Header="Datos de la Transferencia">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="80"
+                       HorizontalContentAlignment="Left" Margin="5,0,0,0"
+                       Content="Origen:" />
+                    <ComboBox Grid.Row="0" IsEnabled="False"
+                         Grid.Column="1"
+                         Height="30" Width="220"
+                         Margin="5,2,5,2" DisplayMemberPath="Nombre" SelectedValuePath="Id"   ItemsSource="{Binding Origen}" SelectedValue="{Binding IdUbicacionOrigen}"
+                        >
+                    </ComboBox>
+
+                    <Label Width="80"
+                           Margin="5,0,0,0"
+                           HorizontalContentAlignment="Left"
+                           Content="Destino:" />
+
+                    <ComboBox Grid.Row="0"
+                              Grid.Column="3"
+                              Width="220"
+                              Height="30"
+                              Margin="5,2,5,2"
+                              DisplayMemberPath="Nombre"
+                              ItemsSource="{Binding Destino}"
+                              SelectedIndex="0"
+                              SelectedValue="{Binding IdUbicacionDestino}"
+                              SelectedValuePath="Id" />
+
+                 
+                </StackPanel>
+
+                <StackPanel Margin="0,2,0,0" Orientation="Horizontal">
+
+
+                    <Label Width="80"
+                           Margin="5,0,0,0"
+                           HorizontalContentAlignment="Left"
+                           Content="Fecha Envio:" />
+
+                    <DatePicker Width="170"
+                                SelectedDate="{Binding FechaSeleccionada,
+                                                       UpdateSourceTrigger=PropertyChanged}"
+                                Style="{StaticResource styleDatePicker}" />
+
+                    <Label Grid.Row="0"
+                           Grid.Column="2"
+                           Margin="5,0,0,0"
+                           HorizontalContentAlignment="Left"
+                           Content="No Guia:" />
+
+                    <TextBox Width="170" Text="{Binding Guia, UpdateSourceTrigger=PropertyChanged}" />
+
+                    <Label Width="80"
+                           Margin="5,0,0,0"
+                           HorizontalContentAlignment="Left"
+                           Content="Paqueteria:" />
+
+                    <ComboBox Grid.Row="0"
+                              Grid.Column="3"
+                              Width="220"
+                              Height="30"
+                              Margin="5,2,5,2"
+                              DisplayMemberPath="Nombre"
+                              ItemsSource="{Binding Paqueterias}"
+                              SelectedIndex="0"
+                              SelectedValue="{Binding IdPaqueteriaSeleccionada}"
+                              SelectedValuePath="Id" />
+
+                </StackPanel>
+            </StackPanel>
+
+        </GroupBox>
+
+        <GroupBox Margin="2"
+                  DockPanel.Dock="Top"
+                  Header="Datos del Producto">
+
+
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <Label Grid.Row="1" Width="90"
+                           Grid.Column="0"
+                           Margin="5,0,0,0"
+                           HorizontalContentAlignment="Left"
+                           Content="Producto:" />
+
+                    <combo2:AutoCompleteTextBox x:Name="comboproductos2"
+                                                Grid.Row="1"
+                                                Grid.Column="1"
+                                                Width="695"
+                                                Height="35"
+                                                Margin="5,0,0,0"
+                                                VerticalAlignment="Center"
+                                                DisplayMember="NombreMostrar"
+                                                IconPlacement="Left"
+                                                IconVisibility="Visible"
+                                                ItemTemplate="{StaticResource productosTransferenciaTemplate}"
+                                                Provider="{StaticResource ResourceKey=ProductosTransferenciaProvider}"
+                                                Watermark="Buscar por nombre">
+                        <combo2:AutoCompleteTextBox.SelectedItem>
+                            <Binding Mode="TwoWay" Path="SelectedProducto">
+                                <Binding.ValidationRules>
+                                    <combo:RequiredValidationRule />
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </combo2:AutoCompleteTextBox.SelectedItem>
+                        <combo2:AutoCompleteTextBox.LoadingContent>
+                            <TextBlock Margin="5"
+                                       Background="White"
+                                       FontSize="14"
+                                       Foreground="Black"
+                                       Text="Cargando..." />
+                        </combo2:AutoCompleteTextBox.LoadingContent>
+                        <combo2:AutoCompleteTextBox.Icon>
+                            <Border Width="20" Height="20">
+                                <Image Width="16"
+                                       Height="16"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       Source="/Resources/Images/search_icon.png" />
+                            </Border>
+                        </combo2:AutoCompleteTextBox.Icon>
+                    </combo2:AutoCompleteTextBox>
+
+
+                </StackPanel>
+                <StackPanel Margin="0,2,0,0" Orientation="Horizontal">
+                    <Label Margin="5,0,0,0"
+                           HorizontalContentAlignment="Left"
+                           Content="Descripción :" Width="90" />
+
+                    <TextBox Width="695" Margin="5,0,0,0"
+                             IsReadOnly="True"
+                             Text="{Binding Detalle}" />
+                </StackPanel>
+
+                <StackPanel Margin="0,2,0,0" Orientation="Horizontal">
+                    <!--<Label Grid.Row="1"
+                       Grid.Column="2"
+                      HorizontalContentAlignment="Left" Margin="5,0,0,0"
+                       Content="Cant. Inv:" />-->
+
+                    <!--<TextBox Grid.Row="1" Width="150"  IsReadOnly="True"
+                       Grid.Column="3" Text="{Binding CantidadInventario}" />
+
+                    <Label Grid.Row="3"
+                       Grid.Column="0"
+                       HorizontalContentAlignment="Left" Margin="5,0,0,0"
+                       Content="Cant. a trans. :" />
+
+                    <TextBox Grid.Row="3" Width="150"
+                        Text="{Binding CantidadATranspasar, Mode=TwoWay}" />-->
+
+
+                    <Label Grid.Row="3" Width="90"
+                           Grid.Column="2"
+                           Margin="5,0,0,0"
+                           HorizontalContentAlignment="Left"
+                           Content="Usuario:" />
+
+
+                    <TextBox Grid.Row="3"
+                             Grid.Column="3"
+                             Width="300"
+                             Height="30"
+                             Margin="7,2,5,2"
+                             IsReadOnly="True"
+                             Text="{Binding UsuarioLogueado}" />
+
+                    <Label Grid.Row="3"
+                           Grid.Column="2"
+                           Margin="5,0,0,0"
+                           HorizontalContentAlignment="Left"
+                           Content="Pedimento:" />
+
+                    <ComboBox Grid.Row="0"
+                              Grid.Column="1"
+                              Width="300"
+                              Height="30"
+                              Margin="10,2,5,2"
+                              ItemsSource="{Binding Pedimentos}"
+                              SelectedIndex="0"
+                              SelectedValue="{Binding PedimentoSeleccionado}" />
+
+
+                </StackPanel>
+
+                <StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+                    <Button Width="120"
+                            Height="35"
+                            Margin="2"
+                            HorizontalAlignment="Left"
+                            Command="{Binding NuevoProductoCmd}"
+                            Content="Nuevo" />
+                    
+                    <Button Width="120"
+                            Height="35"
+                            Margin="2"
+                            HorizontalAlignment="Left"
+                            Command="{Binding AgregarProductoAlGridCmd}"
+                            Content="Añadir" />
+                    <Button Width="120"
+                            Height="35"
+                            Margin="2"
+                            HorizontalAlignment="Left"
+                            Command="{Binding CrearTraspasoCmd}"
+                            Content="Realizar Transpaso" />
+                </StackPanel>
+            </StackPanel>
+
+        </GroupBox>
+
+        <Border Height="7"
+                Background="Gray"
+                DockPanel.Dock="Top" />
+
+        <bsFilter:FilterDataGrid x:Name="dgSuppliers"
+                                 Grid.Row="4"
+                                 Margin="5,0,5,5"
+                                 AutoGenerateColumns="False"
+                                 Background="Silver"
+                                 CanUserAddRows="False"
+                                 CanUserResizeRows="True"
+                                 ItemsSource="{Binding Detalles}">
+            <DataGrid.Columns>
+
+
+
+                <!--<DataGridTextColumn Width="0.5*"
+                                    Binding="{Binding FechaMovimiento}"
+                                    CanUserResize="True"
+                                    Header="Clave"
+                                    IsReadOnly="True" />-->
+
+                <DataGridTemplateColumn Width="*"
+                                        CanUserResize="True"
+                                        Header="Producto"
+                                        IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label Margin="1,1,4,1"
+                                   HorizontalContentAlignment="Left"
+                                   VerticalContentAlignment="Center"
+                                   Content="{Binding Producto,
+                                                     Mode=TwoWay,
+                                                     UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Width="100"
+                                        CanUserResize="True"
+                                        Header="Pedimento"
+                                        IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label Margin="1,1,4,1"
+                                   HorizontalContentAlignment="Left"
+                                   VerticalContentAlignment="Center"
+                                   Content="{Binding Pedimento,
+                                                     Mode=TwoWay,
+                                                     UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Width="auto"
+                                        CanUserResize="True"
+                                        Header="Cantidad Disponible"
+                                        IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label Margin="1,1,4,1"
+                                   HorizontalContentAlignment="Left"
+                                   VerticalContentAlignment="Center"
+                                   Content="{Binding CantidadDisponible,
+                                                     Mode=TwoWay,
+                                                     UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+                </DataGridTemplateColumn>
+
+
+                <DataGridTemplateColumn Width="auto"
+                                        CanUserResize="True"
+                                        Header="Cantidad Traspaso"
+                                        IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Margin="1,1,4,1"
+                                     HorizontalContentAlignment="Center"
+                                     VerticalContentAlignment="Center"
+                                     Text="{Binding Cantidad,
+                                                    Mode=TwoWay,
+                                                    UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <TextBox Margin="1,1,1,1"
+                                     HorizontalContentAlignment="Center"
+                                     VerticalContentAlignment="Center"
+                                     Text="{Binding Cantidad,
+                                                    UpdateSourceTrigger=PropertyChanged,
+                                                    Mode=TwoWay}">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="Loaded">
+                                        <mvvm:TakeFocusAndSelectTextOnVisibleBehavior />
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </TextBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
+
+                    <DataGridTemplateColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="IsEditing" Value="True" />
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#ff9900" />
+                                    <Setter Property="Foreground" Value="Black" />
+                                    <Setter Property="BorderBrush" Value="Transparent" />
+                                    <Setter Property="BorderThickness" Value="0" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGridTemplateColumn.CellStyle>
+                </DataGridTemplateColumn>
+
+
+
+                <DataGridTemplateColumn Width="50" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button  Command="{Binding ElementName=viewTransferInv, Path=DataContext.EliminarElementoCmd}"
+                                     CommandParameter="{Binding}" >
+                                <Image Width="25"
+                                       Height="30"
+                                       Source="/Resources/Images/imgDelete32.png"
+                                       Stretch="Fill" />
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+
+
+            </DataGrid.Columns>
+
+        </bsFilter:FilterDataGrid>
+    </DockPanel>
+</Window>

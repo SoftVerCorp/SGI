@@ -1,0 +1,36 @@
+﻿<Window x:Class="SGI.View.NewCostConcept"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+           xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        Title="Nuevo Costo Concepto" Height="200" Width="350" WindowStartupLocation="CenterScreen"        
+        Style="{StaticResource WindowDialog}" x:Name="newCostConcept" >
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding Loaded}" CommandParameter="{Binding ElementName=newCostConcept}">
+            </i:InvokeCommandAction>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <DockPanel>
+        <Label  DockPanel.Dock="Top" Content=" Costo Concepto." Style="{StaticResource LabelTitle}"/>
+        <Border DockPanel.Dock="Bottom" Style="{StaticResource BorderBottom}" >
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button IsDefault="True" Content="Aceptar" Command="{Binding Accept}" Style="{StaticResource ButtonApp}" />
+                <Button IsCancel="True"  Content="Cancelar" Command="{Binding Close}" Style="{StaticResource ButtonApp}" />
+            </StackPanel>
+        </Border>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Label   Content="Nombre:" />
+            <TextBox Grid.Column="1"   MaxLength="60" Margin="0,0,5,0"
+                     Text="{Binding CostName, UpdateSourceTrigger=PropertyChanged}" x:Name="txtNewConcept"/>
+        </Grid>
+    </DockPanel>
+</Window>
+

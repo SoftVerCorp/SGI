@@ -1,0 +1,174 @@
+﻿<UserControl x:Class="SGI.View.DialogsInformation.ViewProviders"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mvvm="clr-namespace:SGI.Stuffs"
+              xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+             mc:Ignorable="d"  x:Name="miuser" 
+             d:DesignHeight="500" d:DesignWidth="950" Background="#C0C0C0">
+    <UserControl.Resources>
+
+    </UserControl.Resources>
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding Loaded}" CommandParameter="{Binding ElementName=viewProducts}">
+            </i:InvokeCommandAction>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+
+    <DockPanel>
+        <Label  DockPanel.Dock="Top" Height="40" Padding="0" Background="#0055FF" Style="{StaticResource LabelTitle}">
+            <Label.Content>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Consultar Proveedores" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" Foreground="White"   />
+                    <Button  Width="40" Margin="2" Click="Button_Click" ToolTip="Nuevo" Cursor="Hand"  Command="{Binding Clean}">
+                        <Button.Content>
+                            <Image Source="/Resources/Images/Clean32.png" Stretch="Fill"></Image>
+                        </Button.Content>
+                    </Button>
+                    <Button  Width="40" Margin="2" ToolTip="Busqueda"  Cursor="Hand" Command="{Binding Clean}" Click="Button_Click_1">
+                        <Button.Content>
+                            <Image Source="/Resources/Images/lupa.png" Stretch="Fill"></Image>
+                        </Button.Content>
+                    </Button>
+                </StackPanel>
+            </Label.Content>
+        </Label>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" ></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <!-- Grid de busqueda -->
+            <Border x:Name="brdSearch" Height="80" Grid.Row="0" Margin="2,1,2,2" BorderBrush="Black" BorderThickness="1">
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Style="{StaticResource LabelTitle}" Background="#466EBC" BorderThickness="0" Content="Busqueda">
+
+                    </Label>
+                    <Border  Margin="0,2,0,2" Grid.Row="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+
+                            <Label Grid.Row="0" Grid.Column="0"   Content="Nombre:" />
+                            <TextBox Grid.Row="0" Width="150" Grid.Column="1"   MaxLength="60"
+                     Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,5,0" />
+
+                            <Label Grid.Row="0" Grid.Column="2"   Content="RFC:" />
+                            <TextBox Grid.Row="0" Width="150" Grid.Column="3"   MaxLength="60"
+                     Text="{Binding Rfc, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,5,0"/>
+
+                            <Button Grid.Column="4" Content="Refrescar" Width="120" Height="35" 
+                        HorizontalAlignment="Center" VerticalAlignment="Center"
+                         Command="{Binding Refresh}"/>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+
+            <Border x:Name="bdrOperations" Height="150" Grid.Row="1"  Margin="2,0,2,2" BorderBrush="Black" BorderThickness="1">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="35" />
+                        <RowDefinition Height="40" />
+                    </Grid.RowDefinitions>
+
+                    <Label Style="{StaticResource LabelTitle}" Background="#466EBC" Content="Altas , Bajas y Modificaciones" BorderThickness="0"  Grid.ColumnSpan="8" Grid.Row="0" />
+
+                    <Label    Content="Nombre:" Grid.Row="1" Grid.Column="0"/>
+                    <TextBox Grid.Row="1" Grid.Column="1"  Height="30" Width="150" MaxLength="100"
+                     Text="{Binding ProviderName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Margin="1,2,5,0" x:Name="txtProviderName"/>
+
+                    <Label    Content="RFC:" Grid.Row="1" Grid.Column="2"/>
+                    <TextBox  Grid.Row="1" Grid.Column="3"  Height="30" Width="150" MaxLength="100"
+                     Text="{Binding ProviderRFC, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Margin="1,2,5,0"/>
+
+                    <Label    Content="Dirección:" Grid.Row="1" Grid.Column="4"/>
+                    <TextBox  Grid.Row="1" Grid.Column="5"  Width="150" Height="30"  MaxLength="50"
+                     Text="{Binding ProviderAddress, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Margin="1,2,5,0"/>
+
+                    <Border Grid.Row="3" Grid.ColumnSpan="8"  Height="40" Style="{StaticResource BorderBottom}">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                            <Button Height="35" Width="40" Margin="2" Cursor="Hand" ToolTip="Guardar Cambios"
+                                Command="{Binding Save}" >
+                                <Button.Content>
+                                    <Image Source="/Resources/Images/imgSave32.png" Stretch="Fill"></Image>
+                                </Button.Content>
+                            </Button>
+
+                            <Button Height="35" Width="40" Margin="2" ToolTip="Eliminar Elemento"
+                                Command="{Binding DeleteItem}">
+                                <Button.Content>
+                                    <Image Source="/Resources/Images/imgDelete32.png" Stretch="Fill"></Image>
+                                </Button.Content>
+                            </Button>
+
+                            <Button Height="35" Width="40" Margin="2" ToolTip="Nuevo"  Command="{Binding Clean}">
+                                <Button.Content>
+                                    <Image Source="/Resources/Images/Clean32.png" Stretch="Fill"></Image>
+                                </Button.Content>
+                            </Button>
+
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="2"  Margin="2,1,2,2" BorderBrush="Black" BorderThickness="1">
+                <DockPanel>
+                    <Label Style="{StaticResource LabelTitle}" Background="#466EBC" BorderThickness="0" DockPanel.Dock="Top" Content="Detalle" Grid.Row="0" />
+
+                    <DataGrid Grid.Row="1" AutoGenerateColumns="False"  CanUserAddRows="False" Margin="0,1,0,0"
+                  ItemsSource="{Binding ItemList , Mode=TwoWay, IsAsync=True}"   
+                  SelectedItem="{Binding SelectedItem}"
+                  >
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="PreviewMouseDown" >
+                                <mvvm:EventToCommand Command="{Binding SelectedITemGridClick}" CommandParameter="{Binding EventArgs, RelativeSource={RelativeSource Self}}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn   Header="Nombre" Width="0.5*" Binding="{Binding Name}" ></DataGridTextColumn>
+                            <DataGridTextColumn   Header="Rfc" Width="0.5*"  Binding="{Binding Rfc}" ></DataGridTextColumn>
+                            <DataGridTextColumn   Header="Dirección" Width="*"  Binding="{Binding Address}" ></DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </DockPanel>
+              
+            </Border>
+
+        </Grid>
+
+       
+    </DockPanel>
+</UserControl>

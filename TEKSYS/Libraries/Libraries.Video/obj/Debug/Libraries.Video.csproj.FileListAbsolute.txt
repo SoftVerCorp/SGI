@@ -1,0 +1,1076 @@
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V4\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.dll
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.xml
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+F:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.xml
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+G:\Proyectos de Software\SGI\V2\V5\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\Users\Ruben\Documents\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Users\Ruben\Documents\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Users\Ruben\Desktop\SGIVersiones\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.xml
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+G:\Proyectos de Software\SGI\V7\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\Users\Ruben\Desktop\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Users\Ruben\Desktop\TK\Teksys\Teksys\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI(120916)\SGI\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\Users\Ruben\Documents\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Users\c.rrivsa\Documents\SGI\SGI_V2(130916)\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.dll
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.xml
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+F:\Proyectos de Software\SGI\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.xml
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+E:\SISTEMAS\UNO\V16_OPC1\V16_OPC1\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.xml
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+D:\Luis\JM\SGI(130916)\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\AForge.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\AForge.xml
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+D:\Luis\JM\SGI 27092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\Users\JuanMiguel\Documents\Documentos Personales\SGI\V1\SGI 28092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V11\SGI 28092016\SGI 28092016\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V13\VTEKSYS\VTEKSYS\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.dll
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.xml
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+F:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.xml
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+G:\Proyectos de Software\SGI\V21\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.dll
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.xml
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+F:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.xml
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+G:\Proyectos de Software\SGI\V22\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.xml
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+D:\Users\60057915\Downloads\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.xml
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+G:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.dll
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.xml
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+F:\Proyectos de Software\SGI\V23\TEKSYS v3\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.xml
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+G:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.dll
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.xml
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+F:\Proyectos de Software\SGI\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\Users\AUTO_GIGA\Downloads\V24\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.xml
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+G:\Proyectos de Software\SGI\V25\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\Users\franz\Documents\Proyectos de Software\SGI Versiones\V16\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\Libraries.Video.pdb
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.xml
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Controls.xml
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Imaging.xml
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Math.xml
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.xml
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\AForge.Video.DirectShow.xml
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\System.Windows.Interactivity.xml
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.baml
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\obj\Debug\WebcamDevice.g.cs
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video_MarkupCompile.cache
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.g.resources
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.Properties.Resources.resources
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
+C:\Proyectos_Alternos\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb

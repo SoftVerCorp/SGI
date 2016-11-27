@@ -1,0 +1,324 @@
+﻿<Window x:Class="SGI.View.Catalogos.ManejoProveedores"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+         xmlns:bsFilter="http://schemas.bolapansoft.com/xaml/Controls/ItemsFilter"
+        xmlns:mvvm="clr-namespace:SGI.Stuffs"
+        Title="Catalogo de Proveedores"
+        Width="1050"
+        Height="700"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Normal">
+    <Window.Resources>
+        <ResourceDictionary Source="/Resources/Styles/ItemsFilterStyle.xaml" />
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="190" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="80" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <GroupBox Grid.Row="0"
+                  Grid.Column="0"
+                  Margin="2"
+                  Header="Informacion Proveedor">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="120" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="20" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0"
+                       Grid.Column="0"
+                       HorizontalContentAlignment="Center"
+                       Content="Nombre:" />
+                <TextBox Grid.Row="0"
+                         Grid.Column="1"
+                         Width="200"
+                         Height="30"
+                         Margin="5,2,5,2"
+                         Text="{Binding SelectedProvider.Name,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+                <Label Grid.Row="0"
+                       Grid.Column="2"
+                       HorizontalContentAlignment="Center"
+                       Content="Razon social:" />
+                <TextBox Grid.Row="0"
+                         Grid.Column="3"
+                         Width="200"
+                         Height="30"
+                         Margin="5,2,5,2"
+                         Text="{Binding SelectedProvider.CompanyName,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+                <Label Grid.Row="0"
+                       Grid.Column="4"
+                       HorizontalContentAlignment="Center"
+                       Content="Direccion:" />
+                <TextBox Grid.Row="0"
+                         Grid.Column="5"
+                         Width="200"
+                         Height="30"
+                         Margin="5,2,5,2"
+                         Text="{Binding SelectedProvider.Address,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+
+                <Label Grid.Row="1"
+                       Grid.Column="0"
+                       HorizontalContentAlignment="Center"
+                       Content="RFC:" />
+                <TextBox Grid.Row="1"
+                         Grid.Column="1"
+                         Width="200"
+                         Height="30"
+                         Margin="5,2,5,2"
+                         Text="{Binding SelectedProvider.Rfc,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+                <Label Grid.Row="1"
+                       Grid.Column="2"
+                       HorizontalContentAlignment="Center"
+                       Content="Correo:" />
+                <TextBox Grid.Row="1"
+                         Grid.Column="3"
+                         Width="200"
+                         Height="30"
+                         Margin="5,2,5,2"
+                         Text="{Binding SelectedProvider.Correo,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+                <Label Grid.Row="1"
+                       Grid.Column="4"
+                       HorizontalContentAlignment="Center"
+                       Content="Tipo de pago:" />
+
+
+                <ComboBox   Margin="5,2,5,2" Grid.Row="1" Grid.Column="5" ItemsSource="{Binding TiposDePago}"
+                          DisplayMemberPath="description" SelectedValuePath="Id" SelectedValue="{Binding SelectedProvider.IdTipoPago}" />
+
+                <Label Grid.Row="2"
+                       Grid.Column="0"
+                       HorizontalContentAlignment="Center"
+                       Content="Cantidad de dias:" />
+
+                <TextBox Grid.Row="2"
+                         Grid.Column="1"
+                         Width="200"
+                         Height="30"
+                         Margin="5,2,5,2"
+                         Text="{Binding SelectedProvider.CantidadDeDias,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+                <Border Grid.Row="3"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="4"
+                        Margin="5 0 0 0">
+                    <StackPanel Orientation="Horizontal">
+                        <Button Width="40"
+                                Height="35"
+                                Margin="2"
+                                Command="{Binding Actualizar}"
+                                Cursor="Hand"
+                                ToolTip="Guardar Cambios">
+                            <Button.Content>
+                                <Image Source="/Resources/Images/imgSave32.png" Stretch="Fill" />
+                            </Button.Content>
+                        </Button>
+                        <Button Width="40"
+                                Height="35"
+                                Margin="2"
+                                Command="{Binding Eliminar}"
+                                CommandParameter="{Binding Id}"
+                                IsEnabled="{Binding ModoEdicion}"
+                                ToolTip="Eliminar Elemento">
+                            <Button.Content>
+                                <Image Source="/Resources/Images/imgDelete32.png" Stretch="Fill" />
+                            </Button.Content>
+                        </Button>
+                        <Button Width="40"
+                                Height="35"
+                                Margin="2"
+                                Command="{Binding Agregar}"
+                                ToolTip="Nuevo">
+                            <Button.Content>
+                                <Image Source="/Resources/Images/Clean32.png" Stretch="Fill" />
+                            </Button.Content>
+                        </Button>
+                        <Button Width="40"
+                                Height="35"
+                                Margin="2"
+                                Command="{Binding Limpiar}"
+                                ToolTip="Limpiar">
+                            <Button.Content>
+                                <Image Source="/Resources/Images/Update-128.png" Stretch="Fill" />
+                            </Button.Content>
+                        </Button>
+
+                        <Button Width="40"
+                                Height="35"
+                                Margin="2"
+                                Command="{Binding ExportarCmd}"
+                                ToolTip="Exportar a Excel">
+                            <Button.Content>
+                                <Image Source="/Resources/Images/Excel3.png" Stretch="Fill" />
+                            </Button.Content>
+                        </Button>
+                        
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+        </GroupBox>
+
+        <GroupBox Grid.Row="3"
+                  Grid.Column="0"
+                  Margin="2"
+                  Header="Filtros">
+
+
+            <Grid Margin="2,5,2,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0"
+                       Grid.Column="0"
+                       HorizontalContentAlignment="Center"
+                       Content="Nombre:" />
+                <TextBox Grid.Row="0"
+                         Grid.Column="1"
+                         Width="200"
+                         Height="30"
+                         Margin="5,2,5,2"
+                         Text="{Binding NombreProveedorFiltro,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+                <Label Grid.Row="0"
+                       Grid.Column="2"
+                       HorizontalContentAlignment="Center"
+                       Content="Razon Social:" />
+                <TextBox Grid.Row="0"
+                         Grid.Column="3"
+                         Width="200"
+                         Height="30"
+                         Margin="5,2,5,2"
+                         MaxLength="50"
+                         Text="{Binding RazonSocialFiltro,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+            </Grid>
+        </GroupBox>
+        <!--<StackPanel Orientation="Vertical" Grid.Column="0" Grid.Row="3" Margin="2,5,2,2">
+            <StackPanel Orientation="Horizontal">
+                <Label   Content="Buscar:"/>
+                <TextBox Grid.Column="1"   MaxLength="50" Width="300"
+                            Text="{Binding FamilySearch, UpdateSourceTrigger=PropertyChanged}" Margin="5,2,5,2" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="7 5 0 0">
+                <Button Name="btnRefresh" Content="Refrescar" Height="35" Width="100" Command="{Binding RefreshSearch}"></Button>
+            </StackPanel>
+        </StackPanel>-->
+
+        <bsFilter:FilterDataGrid x:Name="dgSuppliers"
+                  Grid.Row="4"
+                  Margin="5,0,5,5"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  CanUserResizeRows="True"
+                  ItemsSource="{Binding ProviderList,
+                                        IsAsync=True}"
+                  SelectedItem="{Binding SelectedProvider,
+                                         Mode=TwoWay}">
+
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDoubleClick">
+                    <mvvm:EventToCommand Command="{Binding SelectedITemGridClick}" CommandParameter="{Binding EventArgs, RelativeSource={RelativeSource Self}}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Width="*"
+                                    Binding="{Binding Id}"
+                                    CanUserResize="True"
+                                    Header="Número"
+                                    IsReadOnly="True" />
+                <DataGridTextColumn Width="*"
+                                    Binding="{Binding CompanyName}"
+                                    CanUserResize="True"
+                                    Header="Razón Social"
+                                    IsReadOnly="True" />
+                <DataGridTextColumn Width="*"
+                                    Binding="{Binding Name}"
+                                    CanUserResize="True"
+                                    Header="Nombre"
+                                    IsReadOnly="True" />
+                <DataGridTextColumn Width="*"
+                                    Binding="{Binding Address}"
+                                    CanUserResize="True"
+                                    Header="Dirección"
+                                    IsReadOnly="True" />
+
+                <DataGridTextColumn Width="*"
+                                    Binding="{Binding TipoPago}"
+                                    CanUserResize="True"
+                                    Header="Tipo de Pago"
+                                    IsReadOnly="True" />
+
+                <DataGridTextColumn Width="*"
+                                    Binding="{Binding CantidadDeDias}"
+                                    CanUserResize="True"
+                                    Header="Cantidad de Dias"
+                                    IsReadOnly="True" />
+                
+                
+                <DataGridTextColumn Width="*"
+                                    Binding="{Binding Rfc}"
+                                    CanUserResize="True"
+                                    Header="RFC"
+                                    IsReadOnly="True" />
+                <DataGridTextColumn Width="*"
+                                    Binding="{Binding Correo}"
+                                    CanUserResize="True"
+                                    Header="Correo"
+                                    IsReadOnly="True" />
+
+            </DataGrid.Columns>
+
+        </bsFilter:FilterDataGrid>
+    </Grid>
+</Window>

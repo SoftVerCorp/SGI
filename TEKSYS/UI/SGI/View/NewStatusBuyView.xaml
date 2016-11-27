@@ -1,0 +1,60 @@
+﻿<Window x:Class="SGI.View.NewStatusBuyView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        x:Name="newStatusBuy"
+        Title="{Binding TitleWindow}"
+        Width="420"
+        Height="200"
+        Style="{StaticResource WindowDialog}"
+        WindowStartupLocation="CenterScreen">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding Loaded}" CommandParameter="{Binding ElementName=newStatusBuy}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <DockPanel>
+        <Label Content="{Binding TitleWindow}"
+               DockPanel.Dock="Top"
+               Style="{StaticResource LabelTitle}" />
+        <Border DockPanel.Dock="Bottom" Style="{StaticResource BorderBottom}">
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button Command="{Binding Accept}"
+                        Content="Aceptar"
+                        IsDefault="True"
+                        Style="{StaticResource ButtonApp}" />
+                <Button Command="{Binding Close}"
+                        Content="Cancelar"
+                        IsCancel="True"
+                        Style="{StaticResource ButtonApp}" />
+            </StackPanel>
+        </Border>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Label Content="Nombre:" />
+            <TextBox x:Name="txtPaymentName"
+                     Grid.Column="1"
+                     Margin="0,0,5,0"
+                     MaxLength="60"
+                     Text="{Binding Name,
+                                    UpdateSourceTrigger=PropertyChanged}" />
+
+            <CheckBox Grid.Row="1"
+                      Grid.Column="0"
+                      Grid.ColumnSpan="2"
+                      HorizontalContentAlignment="Left"
+                      VerticalContentAlignment="Center"
+                      Content="Enviar Notificación"
+                      FontSize="14"
+                      IsChecked="{Binding SendNofity,
+                                          Mode=TwoWay}" />
+        </Grid>
+    </DockPanel>
+</Window>

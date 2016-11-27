@@ -1,0 +1,263 @@
+﻿<Window x:Class="SGI.View.Contabilidad.ChecadasView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SGI.View.Contabilidad"
+        xmlns:wpfext="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:combo2="http://wpfcontrols.com/"
+        xmlns:combo="clr-namespace:SGI.AutoCombo"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:bh="clr-namespace:SGI.Stuffs"
+        xmlns:bsFilter="http://schemas.bolapansoft.com/xaml/Controls/ItemsFilter"
+        mc:Ignorable="d"
+        Title="Catalogo de Clientes"   
+        Width="1200"
+        Height="Auto"
+        WindowState="Maximized">
+    <Window.Resources>
+        <bh:BooleanToVisibilityConverter x:Key="boolToVis" />
+        <combo:EmpleadosProvider x:Key="EmpleadosProvider" />
+        <DataTemplate x:Key="empleadoTemplate">
+            <Border Padding="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Image Grid.RowSpan="2"
+                           Width="32"
+                           Height="32"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Source="/Resources/Images/cliente.png"/>
+                    <TextBlock Text="{Binding Path=Nombre}"
+                               FontWeight="Bold" 
+                               Grid.Column="1" 
+                               Grid.Row="0"
+                               FontFamily="Segoe UI" Background="White"
+                               VerticalAlignment="Bottom" Foreground="Black"/>
+                    <!--<TextBlock Text="{Binding Path=Detalle}"
+                               Grid.Column="1"
+                               Grid.Row="1"  Background="White"
+                               VerticalAlignment="Top" Foreground="Gray"/>-->
+                </Grid>
+            </Border>
+        </DataTemplate>
+        <DataTemplate x:Key="RowDetailsTemplate">
+            <DataGrid ItemsSource="{Binding Detalle}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Entrada" Binding="{Binding Entrada}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Salida" Binding="{Binding SalidaComida}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Entrada" Binding="{Binding EntradaComida}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Salida" Binding="{Binding Salida}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </DataTemplate>
+    </Window.Resources>
+    <Window.InputBindings>
+        <KeyBinding Key="Esc" Modifiers="Shift" Command="{Binding SalirCmd}"/>
+        <KeyBinding Key="F4" Command="{Binding RegistrarCmd}"/>
+        <KeyBinding Key="F2" Command="{Binding ModificarCmd}"/>
+        <KeyBinding Key="F5" Command="{Binding RegistrarFaltaCmd}"/>
+        <KeyBinding Key="F8" Command="{Binding CancelarCmd}"/>
+    </Window.InputBindings>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button Command="{Binding SalirCmd}" Width="120" Height="40" >
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <!--<Image Stretch="None" Source="/Resources/Images/search_icon.png" />-->
+                    <TextBlock Text="Salir [Shift-Esc]" HorizontalAlignment="Center"></TextBlock>
+                </StackPanel>
+            </Button>
+            <!--<Button  Width="120" Height="40" Command="{Binding BuscarCmd}" >
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    -->
+            <!--<Image Stretch="None" Source="/Resources/Images/search_icon.png"   />-->
+            <!--
+                    <TextBlock Text="Buscar [F3]" HorizontalAlignment="Center"></TextBlock>
+                </StackPanel>
+            </Button>-->
+            <Button Command="{Binding RegistrarCmd}"  Width="120" Height="40" >
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <!--<Image Stretch="None" Source="/Resources/Images/search_icon.png"/>-->
+                    <TextBlock Text="Registrar dia [F4]" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button  Width="120" Height="40" Command="{Binding ModificarCmd}" IsEnabled="{Binding HabilitatBtnModificar}" >
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <!--<Image Stretch="None" Source="/Resources/Images/search_icon.png"   />-->
+                    <TextBlock Text="Modificar dia [F2]" HorizontalAlignment="Center"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button  Width="120" Height="40" Command="{Binding RegistrarFaltaCmd}" IsEnabled="{Binding HabilitatBtnEliminar}" >
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <!--<Image Stretch="None" Source="/Resources/Images/search_icon.png"   />-->
+                    <TextBlock Text="Registrar Falta [F5]" HorizontalAlignment="Center"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button  Width="120" Height="40" Command="{Binding CancelarCmd}" IsEnabled="{Binding HabilitatBtnEliminar}" >
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <!--<Image Stretch="None" Source="/Resources/Images/search_icon.png"   />-->
+                    <TextBlock Text="Cancelar [F8]" HorizontalAlignment="Center"></TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Label Grid.Row="0" 
+                       Grid.Column="0"
+                       HorizontalContentAlignment="Center"
+                       Content="Empleado:" />
+            <combo2:AutoCompleteTextBox Width="500"  Margin="5"
+                VerticalAlignment="Center" 
+                Grid.Row="0"
+                Grid.Column="1" Grid.ColumnSpan="7"                         
+                Height="30" 
+                DisplayMember="Nombre"
+                ItemTemplate="{StaticResource empleadoTemplate}"
+                Watermark="Buscar por nombre"
+                IconPlacement="Left"
+                IconVisibility="Visible"
+                Provider="{StaticResource ResourceKey=EmpleadosProvider}"
+                x:Name="Actb"
+                Focusable="True"            
+                >
+                <combo2:AutoCompleteTextBox.SelectedItem>
+                    <Binding Path="SelectedEmpleado" Mode="TwoWay">
+                        <Binding.ValidationRules>
+                            <combo:RequiredValidationRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </combo2:AutoCompleteTextBox.SelectedItem>
+                <combo2:AutoCompleteTextBox.LoadingContent>
+                    <TextBlock Text="Cargando..."
+                           Margin="5"  Background="White"
+                           FontSize="14"  Foreground="Black"/>
+                </combo2:AutoCompleteTextBox.LoadingContent>
+                <combo2:AutoCompleteTextBox.Icon>
+                    <Border Width="20" Height="20">
+                        <Image Source="/Resources/Images/search_icon.png"
+                                   Height="16"
+                                   Width="16"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center" />
+                    </Border>
+                </combo2:AutoCompleteTextBox.Icon>
+            </combo2:AutoCompleteTextBox>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Content="Fecha Actual" Grid.Column="0"></Label>
+                <TextBox Text="{Binding FechaActual}" Grid.Column="1"></TextBox>
+            </Grid>
+        </StackPanel>
+
+        <GroupBox Grid.Row="2" Header="Checadas">
+            <DataGrid 
+                RowDetailsVisibilityMode="VisibleWhenSelected"
+                AutoGenerateColumns="False"
+                Background="Silver"
+                ItemsSource="{Binding ChecadasMes, IsAsync=True}"
+                SelectionMode="Single"
+                FrozenColumnCount="1"
+                ScrollViewer.VerticalScrollBarVisibility="Auto"
+                >
+
+                <DataGrid.RowDetailsTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <DataGrid ItemsSource="{Binding Detalles}" AutoGenerateColumns="False" Margin="20,0">
+                                <DataGrid.Columns>
+                                    <DataGridTemplateColumn Header="Entrada" Width="100">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Label Content="{Binding Entrada}" ContentStringFormat="HH:mm:ss"></Label>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="SalidaComida" Width="100">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Label Content="{Binding SalidaComida}" ContentStringFormat="HH:mm:ss"></Label>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="EntradaComida" Width="100">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Label Content="{Binding EntradaComida}" ContentStringFormat="HH:mm:ss"></Label>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                    <DataGridTemplateColumn Header="Salida" Width="100">
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Label Content="{Binding Salida}" ContentStringFormat="HH:mm:ss"></Label>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </Grid>
+                    </DataTemplate>
+                </DataGrid.RowDetailsTemplate>
+
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="Fecha" Width="150">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Label Content="{Binding Fecha}" ContentStringFormat="dd MMM yyyy"></Label>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Total Horas" Binding="{Binding TotalHoras}" IsReadOnly="True" Width="120"></DataGridTextColumn>
+                    <DataGridTemplateColumn Header="Estado" Width="100">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Label Content="{Binding Estado}"></Label>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>                    
+                    <DataGridTemplateColumn Header="Justificada" Width="100">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Label Content="{Binding Justificacion}"></Label>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Justificacion" Width="250">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Label Content="{Binding Justificacion}"></Label>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Justificacion Por" Width="120">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Label Content="{Binding JustificacionPor}"></Label>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    
+                </DataGrid.Columns>
+                
+            </DataGrid>
+        </GroupBox>
+
+    </Grid>
+</Window>

@@ -1,0 +1,288 @@
+﻿<Window x:Class="SGI.View.OrdenesDeCompraRecibir"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:mvvm="clr-namespace:SGI.Stuffs"
+        Title="OrdenesDeCompra"
+        Width="950"
+        Height="656"
+        WindowStartupLocation="CenterScreen">
+    <DockPanel>
+
+        <!--<GroupBox Height="auto"
+                  Margin="2"
+                  DockPanel.Dock="Top"
+                  FontSize="14"
+                  Header="Datos de Proveedor">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0"
+                       Grid.Column="0"
+                       Content="Número: " />
+                <TextBox Grid.Row="0"
+                         Grid.Column="1"
+                         Width="100"
+                         IsReadOnly="True"
+                         Text="{Binding IdSupplier,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+                <Label Grid.Row="0"
+                       Grid.Column="2"
+                       Content="Nombre: " />
+                <TextBox Grid.Row="0"
+                         Grid.Column="3"
+                         IsReadOnly="True"
+                         Text="{Binding SupplierName,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+            </Grid>
+        </GroupBox>-->
+
+        <GroupBox Height="140"
+                  Margin="2"
+                  DockPanel.Dock="Top"
+                  FontSize="14"
+                  Header="Información Orden de Compra">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0"
+                       Grid.Column="0"
+                       Content="Número: " />
+                <TextBox Grid.Row="0"
+                         Grid.Column="1"
+                         Width="150"
+                         IsReadOnly="True"
+                         Text="{Binding Number,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+                <Label Grid.Row="0"
+                       Grid.Column="2"
+                       Content="Fecha de emisión: " />
+
+                <TextBox Grid.Row="0"
+                         Grid.Column="3"
+                         Width="175"
+                         HorizontalAlignment="Left"
+                         IsReadOnly="True"
+                         Text="{Binding DateOutPut,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+                <!--<DatePicker Grid.Row="0"
+                            Grid.Column="3"
+                            Width="190"
+                            HorizontalAlignment="Left"
+                            IsEnabled="False"
+                            SelectedDate="{Binding DateOutPut,
+                                                   Mode=TwoWay,
+                                                   UpdateSourceTrigger=PropertyChanged}"
+                            Style="{StaticResource styleDatePicker}" />-->
+
+                <Label Grid.Row="0"
+                       Grid.Column="4"
+                       Content="Proveedor: " />
+                <TextBox Grid.Row="0"
+                         Grid.Column="5"
+                         Width="190"
+                         HorizontalAlignment="Left"
+                         IsReadOnly="True"
+                         Text="{Binding SupplierName,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+                <!--<Label Grid.Row="0"
+                       Grid.Column="4"
+                       Content="Fecha de entrega: " />
+                <DatePicker Grid.Row="0"
+                            Grid.Column="5"
+                            IsEnabled="False"
+                            SelectedDate="{Binding DateDeliver,
+                                                   Mode=TwoWay,
+                                                   UpdateSourceTrigger=PropertyChanged}"
+                            Style="{StaticResource styleDatePicker}" />-->
+
+                <Label Grid.Row="1"
+                       Grid.Column="0"
+                       Content="Condición de pago: " />
+
+                <TextBox Grid.Row="1"
+                         Grid.Column="1"
+                         Width="150"
+                         IsReadOnly="True"
+                         Text="{Binding SelectedTypePay,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+                <Label Grid.Row="1"
+                       Grid.Column="2"
+                       Content="Dias: " />
+                <TextBox Grid.Row="1"
+                         Grid.Column="3"
+                         Width="175"
+                         HorizontalAlignment="Left"
+                         IsReadOnly="True"
+                         Text="{Binding Days,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+                <Label Grid.Row="1"
+                       Grid.Column="4"
+                       Content="Estatus: " />
+                <TextBox Grid.Row="1"
+                         Grid.Column="5"
+                         Width="190"
+                         HorizontalAlignment="Left"
+                         IsReadOnly="True"
+                         Text="{Binding EstatusOC,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+                <StackPanel Grid.Row="2"
+                            Grid.Column="4"
+                            Grid.ColumnSpan="2"
+                            Width="Auto"
+                            Margin="5,10,5,2"
+                            HorizontalAlignment="Right"
+                            Orientation="Horizontal">
+
+                    <Button Name="btnAutorizar"
+                            Width="120"
+                            Height="25"
+                            Margin="0 0 2 0"
+                            HorizontalAlignment="Right"
+                            Command="{Binding Accept}"
+                            Content="Autorizar" />
+
+                </StackPanel>
+
+            </Grid>
+        </GroupBox>
+
+        <StackPanel Grid.Row="4" Orientation="Vertical">
+
+            <DataGrid x:Name="dgOrderBuyDetail"
+                      Grid.Column="0"
+                      Margin="2,5,2,5"
+                      AutoGenerateColumns="False"
+                      CanUserAddRows="False"
+                      CanUserResizeRows="True"
+                      ItemsSource="{Binding DetailOrderList,
+                                            IsAsync=True}">
+
+                <!--<i:Interaction.Triggers>
+                    <i:EventTrigger EventName="PreviewMouseDown" >
+                        <mvvm:EventToCommand Command="{Binding SelectedITemGridClick}" CommandParameter="{Binding EventArgs, RelativeSource={RelativeSource Self}}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>-->
+
+                <DataGrid.Columns>
+
+                    <DataGridTextColumn Width="0.5*"
+                                        Binding="{Binding Line}"
+                                        CanUserResize="True"
+                                        Header="Linea"
+                                        IsReadOnly="True" />
+
+                    <DataGridTextColumn Width="0.5*"
+                                        Binding="{Binding ClaveTeknoBike}"
+                                        CanUserResize="True"
+                                        Header="Clave TeknoBike"
+                                        IsReadOnly="True" />
+
+                    <DataGridTextColumn Width="0.6*"
+                                        Binding="{Binding ClaveProveedor}"
+                                        CanUserResize="True"
+                                        Header="Clave Proveedor "
+                                        IsReadOnly="True" />
+
+
+                    <DataGridTextColumn Width="0.5*"
+                                        Binding="{Binding ProductDescription}"
+                                        CanUserResize="True"
+                                        Header="Descripción"
+                                        IsReadOnly="True" />
+
+                    <!--<DataGridTextColumn   Header="Fecha de entrega" Width="0.6*"  CanUserResize="True" IsReadOnly="True"
+                                        Binding="{Binding DateDelevery}" ></DataGridTextColumn>-->
+
+                    <DataGridTextColumn Width="0.5*"
+                                        Binding="{Binding Quantity}"
+                                        CanUserResize="True"
+                                        Header="Cantidad"
+                                        IsReadOnly="True" />
+
+
+
+
+                    <!--<DataGridTextColumn   Header="OUM" Width="0.5*"  CanUserResize="True" IsReadOnly="True"
+                                        Binding="{Binding OUM}"></DataGridTextColumn>-->
+
+                    <DataGridTextColumn Width="0.5*"
+                                        Binding="{Binding UnitPrice}"
+                                        CanUserResize="True"
+                                        Header="Precio unitario"
+                                        IsReadOnly="True" />
+
+                    <!--<DataGridTextColumn Width="0.5*"
+                                        Binding="{Binding Tax}"
+                                        CanUserResize="True"
+                                        Header="Impuestos"
+                                        IsReadOnly="True" />-->
+
+                    <!--<DataGridTextColumn Width="0.5*"
+                                        Binding="{Binding Amount}"
+                                        CanUserResize="True"
+                                        Header="Monto (USD)"
+                                        IsReadOnly="True" />-->
+
+                    <DataGridTextColumn Width="0.5*"
+                                        Binding="{Binding Total}"
+                                        CanUserResize="True"
+                                        Header="Total"
+                                        IsReadOnly="True" />
+
+                </DataGrid.Columns>
+
+            </DataGrid>
+            <StackPanel Margin="2,5,5,2"
+                        HorizontalAlignment="Right"
+                        Orientation="Horizontal">
+                <Label Content="Total General: " />
+                <TextBox Width="175"
+                         HorizontalAlignment="Left"
+                         IsReadOnly="True"
+                         Text="{Binding TotalGeneral,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+            </StackPanel>
+
+        </StackPanel>
+
+    </DockPanel>
+</Window>

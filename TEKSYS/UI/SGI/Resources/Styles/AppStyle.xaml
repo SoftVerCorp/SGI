@@ -1,0 +1,347 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:converters="clr-namespace:SGI.Resources.Converters">
+    <converters:MultiValConverter x:Key="MultiConvert" />
+    <converters:WidthColumnConverter x:Key="WidthColumnConverter" />
+    <converters:WidthColEmpConverter x:Key="WidthColEmpConverter" />
+    <converters:WidthColOrderConverter x:Key="WidthColOrderConverter" />
+
+    <Style x:Key="ChkStyle" TargetType="{x:Type CheckBox}">
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="FontSize" Value="14" />
+    </Style>
+
+
+    <Style x:Key="DatagridCellRigth" TargetType="{x:Type TextBlock}">
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+
+
+    <Style x:Key="styleDatePickerTextBox" TargetType="{x:Type DatePickerTextBox}">
+        <Setter Property="Background" Value="#FFFFFF" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="BorderBrush" Value="Black" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="IsEnabled" Value="True" />
+        <Setter Property="IsReadOnly" Value="True" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="Margin" Value="1,1,1,1" />
+        <Setter Property="Height" Value="35" />
+    </Style>
+
+    <Style x:Key="styleDatePicker" TargetType="{x:Type DatePicker}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type DatePicker}">
+                    <Grid x:Name="PART_Root">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="30" />
+                        </Grid.ColumnDefinitions>
+                        <Popup x:Name="PART_Popup"
+                               AllowsTransparency="True"
+                               StaysOpen="False" />
+                        <DatePickerTextBox x:Name="PART_TextBox"
+                                           Grid.Column="0"
+                                           Height="30"
+                                           VerticalAlignment="Center"
+                                           HorizontalContentAlignment="Left"
+                                           Style="{StaticResource styleDatePickerTextBox}" />
+                        <Button x:Name="PART_Button"
+                                Grid.Column="1"
+                                VerticalAlignment="Stretch">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="OverridesDefaultStyle" Value="True" />
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Image Name="buttonImage"
+                                                       Width="32"
+                                                       Height="32"
+                                                       Margin="1"
+                                                       HorizontalAlignment="Center"
+                                                       VerticalAlignment="Center"
+                                                       Source="/Resources/Images/calendar-128.png"
+                                                       Stretch="Fill">
+                                                    <!--  Width="{Binding Path=Height, RelativeSource={RelativeSource Mode=Self}}"  -->
+                                                </Image>
+                                                <!--<ControlTemplate.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter TargetName="buttonImage"
+                                        Property="Source"
+                                        Value="../images/datepicker_selected.png"></Setter>
+                                                    </Trigger>
+                                                </ControlTemplate.Triggers>-->
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="TabItemStyle" TargetType="{x:Type TabItem}">
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TabItem}">
+                    <Grid Background="White">
+                        <Border Name="Border"
+                                Height="35"
+                                Margin="0,0,-4,0"
+                                BorderThickness="1,1,1,1">
+                            <ContentPresenter x:Name="ContentSite"
+                                              Margin="12,2,12,2"
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"
+                                              ContentSource="Header"
+                                              RecognizesAccessKey="True" />
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Panel.ZIndex" Value="100" />
+                            <Setter TargetName="Border" Property="Background" Value="#5F76BD" />
+                            <Setter TargetName="Border" Property="BorderThickness" Value="1,1,1,0" />
+                            <Setter Property="Foreground" Value="#FFFFFF" />
+                            <Setter Property="FontSize" Value="18" />
+                            <Setter Property="FontWeight" Value="Medium" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <!--<Setter TargetName="Border" Property="Background" Value="{StaticResource DisabledBackgroundBrush}" />-->
+                            <!--<Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource DisabledBorderBrush}" />-->
+                            <!--<Setter Property="Foreground" Value="{StaticResource DisabledForegroundBrush}" />-->
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--<Style TargetType="{x:Type DataGridRow}">
+        <Style.Triggers>
+            <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                <Setter Property="Background" Value="#dddddd" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>-->
+
+    <Style x:Key="HeaderStyle" TargetType="{x:Type DataGridColumnHeader}">
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="Background" Value="#878686" />
+        <Setter Property="BorderBrush" Value="#000000" />
+        <Setter Property="BorderThickness" Value="0.8,0.5,0.8,0.5" />
+    </Style>
+
+    <Style x:Key="das" TargetType="{x:Type DataGrid}">
+        <Setter Property="ColumnHeaderHeight" Value="35" />
+        <Setter Property="RowHeight" Value="30" />
+        <Setter Property="AlternationCount" Value="2" />
+        <!--<Setter Property="ContextMenu">
+            <Setter.Value>
+
+                <ContextMenu>
+                    <MenuItem Command="{Binding Path=AddItem}"  CommandParameter="{Binding}"
+                              Header="Nuevo">
+                        <MenuItem.Icon>
+                            <Image Source="/Resources/Images/add-128.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem Command="{Binding DeleteItem}" Header="Eliminar" CommandParameter="{Binding SelectedItem}">
+                        <MenuItem.Icon>
+                            <Image Source="/Resources/Images/Update-128.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Command="{Binding Path=UpdateItem}" Header="Modificar" CommandParameter="{Binding Path=SelectedItem}">
+                        <MenuItem.Icon>
+                            <Image Source="/Resources/Images/remove-80px-128.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </ContextMenu>
+            </Setter.Value>
+        </Setter>-->
+    </Style>
+
+    <Style x:Key="DataGridStyle2" TargetType="{x:Type DataGrid}">
+        <Setter Property="ContextMenu">
+            <Setter.Value>
+                <ContextMenu>
+                    <MenuItem Command="{Binding Path=AddItem}"
+                              CommandParameter="{Binding}"
+                              Header="Nuevo">
+                        <MenuItem.Icon>
+                            <Image Source="/Resources/Images/add-128.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem Command="{Binding DeleteItem}"
+                              CommandParameter="{Binding SelectedItem}"
+                              Header="Eliminar">
+                        <MenuItem.Icon>
+                            <Image Source="/Resources/Images/Update-128.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Command="{Binding Path=UpdateItem}"
+                              CommandParameter="{Binding Path=SelectedItem}"
+                              Header="Modificar">
+                        <MenuItem.Icon>
+                            <Image Source="/Resources/Images/remove-80px-128.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </ContextMenu>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="CellRightAlign">
+        <Setter Property="Control.HorizontalAlignment" Value="Right" />
+    </Style>
+
+    <Style x:Key="CellCenterAlign" TargetType="{x:Type DataGridCell}">
+        <Setter Property="Control.HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <!--<Style TargetType="{x:Type DataGridCell}">
+        <Setter Property="TextBlock.HorizontalAlignment" Value="Stretch" />
+        <Setter Property="TextBlock.FontFamily" Value="Calibri" />
+        <Setter Property="TextBlock.FontSize" Value="14" />
+    </Style>-->
+
+    <Style TargetType="{x:Type Window}">
+        <Setter Property="Top" Value="0" />
+        <Setter Property="Left" Value="0" />
+        <Setter Property="Background" Value="#C0C0C0" />
+    </Style>
+
+    <Style x:Key="WindowDialog" TargetType="{x:Type Window}">
+        <Setter Property="Background" Value="#C0C0C0" />
+    </Style>
+
+    <Style x:Key="MainMenu" TargetType="{x:Type Menu}">
+        <Setter Property="Background" Value="#F0F0F0" />
+        <Setter Property="FontSize" Value="24" />
+        <Setter Property="FontFamily" Value="Calibri" />
+    </Style>
+    <Style TargetType="{x:Type MenuItem}">
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="Height" Value="40" />
+    </Style>
+
+    <Style x:Key="BorderBottom" TargetType="{x:Type Border}">
+        <Setter Property="BorderBrush" Value="#000000" />
+        <Setter Property="BorderThickness" Value="0.5" />
+        <Setter Property="Height" Value="55" />
+        <Setter Property="Background" Value="#878686" />
+    </Style>
+
+    <Style x:Key="ButtonApp" TargetType="{x:Type Button}">
+        <Setter Property="Height" Value="45" />
+        <Setter Property="Width" Value="90" />
+        <Setter Property="Margin" Value="2,2,2,2" />
+        <Setter Property="BorderBrush" Value="#000000" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="Cursor" Value="Hand" />
+    </Style>
+
+    <Style x:Key="ButtonImageApp" TargetType="{x:Type Button}">
+        <Setter Property="Height" Value="90" />
+        <Setter Property="Width" Value="90" />
+        <Setter Property="Margin" Value="2,2,2,2" />
+        <Setter Property="BorderBrush" Value="#000000" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="Cursor" Value="Hand" />
+    </Style>
+
+    <Style x:Key="ButtonAppSM" TargetType="{x:Type Button}">
+        <Setter Property="Height" Value="25" />
+        <Setter Property="Width" Value="120" />
+        <Setter Property="Margin" Value="2,2,2,2" />
+        <Setter Property="BorderBrush" Value="#000000" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Cursor" Value="Hand" />
+    </Style>
+
+    <Style x:Key="LabelTitle" TargetType="{x:Type Label}">
+        <Setter Property="Height" Value="30" />
+        <Setter Property="Margin" Value="0,0,0,1" />
+        <Setter Property="BorderBrush" Value="#000000" />
+        <Setter Property="Background" Value="#242F70" />
+        <Setter Property="Foreground" Value="#FFFFFF" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+    </Style>
+
+    <Style x:Key="LabelText" TargetType="{x:Type Label}">
+        <Setter Property="Height" Value="28" />
+        <Setter Property="Margin" Value="1,0,0,1" />
+        <Setter Property="Foreground" Value="#000000" />
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+    </Style>
+
+    <Style TargetType="{x:Type Label}">
+        <Setter Property="Height" Value="25" />
+        <Setter Property="Margin" Value="1,0,0,1" />
+        <Setter Property="Foreground" Value="#000000" />
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+    </Style>
+
+    <Style TargetType="{x:Type TextBox}">
+        <Setter Property="Height" Value="30" />
+        <Setter Property="Margin" Value="3" />
+        <!--<Setter Property="Foreground" Value="#000000" />
+        <Setter Property="BorderBrush" Value="#000000" />-->
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="PassValue" TargetType="{x:Type PasswordBox}">
+        <Setter Property="Height" Value="30" />
+        <Setter Property="Margin" Value="1,1,1,1" />
+        <Setter Property="Foreground" Value="#000000" />
+        <Setter Property="BorderBrush" Value="#000000" />
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="CmbValue" TargetType="{x:Type ComboBox}">
+        <Setter Property="Height" Value="30" />
+        <Setter Property="Margin" Value="1,1,1,1" />
+        <Setter Property="FontFamily" Value="Calibri" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+    </Style>
+
+</ResourceDictionary>

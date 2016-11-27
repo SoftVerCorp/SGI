@@ -1,0 +1,146 @@
+﻿<Window x:Class="SGI.View.CatalogoProveedoresView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:bsFilter="http://schemas.bolapansoft.com/xaml/Controls/ItemsFilter"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:mvvm="clr-namespace:SGI.Stuffs"
+        Title="Catalogo de Proveedores"
+        Width="800"
+        Height="688"
+        WindowState="Maximized">
+    <Window.Resources>
+        <ResourceDictionary Source="/Resources/Styles/ItemsFilterStyle.xaml" />
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="80" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0"
+                Grid.Column="0"
+                Height="7"
+                Background="Gray"
+                Visibility="{Binding IsModeSearch}" />
+
+        <GridSplitter Grid.Row="2"
+                      Grid.Column="0"
+                      Height="7"
+                      Margin="1 3 1 1"
+                      HorizontalAlignment="Stretch"
+                      Background="Gray" />
+
+        <GroupBox Grid.Row="3"
+                  Grid.Column="0"
+                  Margin="2"
+                  Header="Filtros">
+
+
+            <Grid Margin="2,5,2,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0"
+                       Grid.Column="0"
+                       HorizontalContentAlignment="Center"
+                       Content="Nombre:" />
+                <TextBox Grid.Row="0"
+                         Grid.Column="1"
+                         Width="200"
+                         Height="30"
+                         Margin="5,2,5,2"
+                         MaxLength="50"
+                         Text="{Binding NombreProveedorFiltro,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+                <Label Grid.Row="0"
+                       Grid.Column="2"
+                       HorizontalContentAlignment="Center"
+                       Content="Razon Social:" />
+                <TextBox Grid.Row="0"
+                         Grid.Column="3"
+                         Width="200"
+                         Height="30"
+                         Margin="5,2,5,2"
+                         MaxLength="50"
+                         Text="{Binding RazonSocialFiltro,
+                                        Mode=TwoWay,
+                                        UpdateSourceTrigger=PropertyChanged}" />
+
+            </Grid>
+        </GroupBox>
+        <!--<StackPanel Orientation="Vertical" Grid.Column="0" Grid.Row="3" Margin="2,5,2,2">
+            <StackPanel Orientation="Horizontal">
+                <Label   Content="Buscar:"/>
+                <TextBox Grid.Column="1"   MaxLength="50" Width="300"
+                            Text="{Binding FamilySearch, UpdateSourceTrigger=PropertyChanged}" Margin="5,2,5,2" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="7 5 0 0">
+                <Button Name="btnRefresh" Content="Refrescar" Height="35" Width="100" Command="{Binding RefreshSearch}"></Button>
+            </StackPanel>
+        </StackPanel>-->
+
+        <bsFilter:FilterDataGrid x:Name="dgSuppliers"
+                  Grid.Row="4"
+                  Margin="5,0,5,5"
+                  AutoGenerateColumns="False"
+                  Background="Silver"
+                  CanUserAddRows="False"
+                  CanUserResizeRows="True"
+                  ItemsSource="{Binding ProviderList,
+                                        IsAsync=True}">
+
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDoubleClick">
+                    <mvvm:EventToCommand Command="{Binding SelectedITemGridClick}" CommandParameter="{Binding EventArgs, RelativeSource={RelativeSource Self}}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Width="0.5*"
+                                    Binding="{Binding Id}"
+                                    CanUserResize="True"
+                                    Header="Número"
+                                    IsReadOnly="True" />
+                <DataGridTextColumn Width="0.5*"
+                                    Binding="{Binding CompanyName}"
+                                    CanUserResize="True"
+                                    Header="Razón Social"
+                                    IsReadOnly="True" />
+                <DataGridTextColumn Width="0.5*"
+                                    Binding="{Binding Name}"
+                                    CanUserResize="True"
+                                    Header="Nombre"
+                                    IsReadOnly="True" />
+                <DataGridTextColumn Width="0.5*"
+                                    Binding="{Binding Address}"
+                                    CanUserResize="True"
+                                    Header="Dirección"
+                                    IsReadOnly="True" />
+                <DataGridTextColumn Width="0.5*"
+                                    Binding="{Binding Correo}"
+                                    CanUserResize="True"
+                                    Header="Correo"
+                                    IsReadOnly="True" />
+
+            </DataGrid.Columns>
+
+        </bsFilter:FilterDataGrid>
+    </Grid>
+</Window>

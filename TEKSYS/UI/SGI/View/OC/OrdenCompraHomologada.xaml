@@ -1,0 +1,398 @@
+﻿<Window x:Class="SGI.View.OC.OrdenCompraHomologada"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:mvvm="clr-namespace:SGI.Stuffs"
+           xmlns:bsFilter="http://schemas.bolapansoft.com/xaml/Controls/ItemsFilter"
+        Title="OrdenCompraHomologada" Height="700" Width="1100" x:Name="wndOrdenCompraHom" >
+    <i:Interaction.Triggers>
+
+        <i:EventTrigger EventName="Loaded">
+            <mvvm:EventToCommand Command="{Binding Loaded}" CommandParameter="{Binding ElementName=wndOrdenCompraHom}"  />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="80" />
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="40" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <GroupBox Grid.Row="0" Header="Datos del Proveedor">
+        <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="auto"  />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Content="Proveedor"  />
+                <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Proveedor}"/>
+                <Label Grid.Column="2" Grid.Row="0" Content="Direccion" />
+                <TextBox Grid.Row="0" Grid.Column="3" Text="{Binding Direccion}" Grid.ColumnSpan="2"/>
+                <Label Grid.Column="0" Grid.Row="1" Content="Condición de pago" />
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding TipoDePago}"/>
+                <Label Grid.Column="2" Grid.Row="1" Content="Dias" />
+                <TextBox Grid.Row="1" Grid.Column="3" Text="{Binding Dias}"/>
+                <Button Grid.Row="1" Grid.Column="4" Width="100" Height="40" Content="Buscar" Command="{Binding BuscarProveedoresCmd}" />
+
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Margin="2" Grid.Row="1"
+                  DockPanel.Dock="Top"
+                  FontSize="14"
+                  Header="Información Orden de Compra"
+                  Padding="2">
+            <Grid VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />                  
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0"
+                       Grid.Column="0"
+                       Content="Fecha: " />
+                <DatePicker Grid.Row="0"
+                         Grid.Column="1" SelectedDate="{Binding Fecha}"
+                         Style="{StaticResource styleDatePicker}"
+                        />
+
+                <Label Grid.Row="0"
+                       Grid.Column="2"
+                       Content="Ubicación: " />
+
+                <ComboBox Grid.Row="0"
+                          Grid.Column="3"
+                          Grid.ColumnSpan="3"
+                          Height="30"
+                          Margin="0" 
+                          DisplayMemberPath="Nombre"  SelectedValuePath="Id"
+                          ItemsSource="{Binding Ubicaciones}" SelectedValue="{Binding UbicacionSeleccionada}"
+                           />
+
+                <!--<Label Grid.Row="0"
+                       Grid.Column="2"
+                       Content="Fecha de emisión: " />
+                <DatePicker Grid.Row="0"
+                            Grid.Column="3"
+                            SelectedDate="{Binding DateOutPut,
+                                                   Mode=TwoWay,
+                                                   UpdateSourceTrigger=PropertyChanged}"
+                            Style="{StaticResource styleDatePicker}" />-->
+
+                <!--<Label Grid.Row="0"
+                       Grid.Column="4"
+                       Content="Fecha de entrega: " />
+                <DatePicker Grid.Row="0"
+                            Grid.Column="5"
+                            SelectedDate="{Binding DateDeliver,
+                                                   Mode=TwoWay,
+                                                   UpdateSourceTrigger=PropertyChanged}"
+                            Style="{StaticResource styleDatePicker}" />-->
+
+
+                <!--<ComboBox Grid.Column="1" Grid.Row="1" Style="{StaticResource CmbValue}" />-->
+
+
+
+
+
+
+                <!--<Label Grid.Row="1"
+                       Grid.Column="4"
+                       Content="Usuario : " />
+
+
+                <ComboBox Grid.Row="1"
+                          Grid.Column="5"
+                          Height="37"
+                          VerticalAlignment="Bottom"
+                          DisplayMemberPath="description"
+                          ItemsSource="{Binding TypePayList,
+                                                Mode=TwoWay}"
+                          SelectedValue="{Binding SelectedTypePay,
+                                                  Mode=TwoWay}"
+                          SelectedValuePath="Id" />-->
+
+                <Label Grid.Row="0"
+                       Grid.Column="6"
+                       Content="Usuario Genera: " />
+
+                <TextBox  Grid.Row="0" IsReadOnly="True" Text="{Binding Usuario}"
+                          Grid.Column="7"/>
+                <!--<ComboBox Grid.Row="0"
+                          Grid.Column="7"
+                          Grid.ColumnSpan="1"
+                          Height="30"
+                          Margin="0"
+                          DisplayMemberPath="Name"
+                          ItemsSource="{Binding Empleados}"
+                          SelectedItem="{Binding EmpleadoSeleccionado}" />-->
+
+
+            </Grid>
+        </GroupBox>
+
+        <Border Style="{StaticResource BorderBottom}" Grid.Row="2" Height="5"  />
+
+      
+        <bsFilter:FilterDataGrid x:Name="gr1"
+                  Grid.Row="3"
+                  Grid.Column="0"
+               
+                  Margin="2,5,2,5"
+                  AutoGenerateColumns="False"
+                  Background="Silver"
+                  CanUserAddRows="False"
+                  CanUserResizeRows="True"
+                  ItemsSource="{Binding OrdenDeCompraProveedor,Mode=TwoWay}">
+
+            <i:Interaction.Triggers>
+               
+                <i:EventTrigger EventName="SelectionChanged">
+                    <mvvm:EventToCommand Command="{Binding CambioSeleccionCmd}"  />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Width="auto"
+                                    Binding="{Binding IdOrdenCompra}"
+                                    CanUserResize="True"
+                                    Header="Orden de Compra"
+                                    IsReadOnly="True" />
+
+                <DataGridTextColumn Width="auto"
+                                    Binding="{Binding Proveedor}"
+                                    CanUserResize="True"
+                                    Header="Proveedor"
+                                    IsReadOnly="True" />
+
+                <DataGridTextColumn Width="auto"
+                                    Binding="{Binding Ubicacion}"
+                                    CanUserResize="True"
+                                    Header="Ubicación"
+                                    IsReadOnly="True" />
+
+                <DataGridTextColumn Width="0.7*"
+                                    Binding="{Binding Producto}"
+                                    CanUserResize="True"
+                                    Header="Producto"
+                                    IsReadOnly="True" />
+
+                <DataGridTextColumn Width="auto"
+                                    Binding="{Binding UOM}"
+                                    CanUserResize="True"
+                                    Header="UOM"
+                                    IsReadOnly="True" />
+
+                <DataGridTextColumn Width="auto"
+                                    Binding="{Binding Impuestos}"
+                                    CanUserResize="True"
+                                    Header="Impuestos"
+                                    IsReadOnly="True" />
+
+                <DataGridTextColumn Width="auto"
+                                    Binding="{Binding Linea}"
+                                    CanUserResize="True"
+                                    Header="Linea"
+                                    IsReadOnly="True" />
+
+                <DataGridTextColumn Width="auto"
+                                    Binding="{Binding PrecioUnitario}"
+                                    CanUserResize="True"
+                                    Header="Precio Unitario"
+                                    IsReadOnly="True" />
+
+                <DataGridTemplateColumn Width="auto"
+                                                CanUserResize="True"
+                                                Header="Cantidad "
+                                                IsReadOnly="False"
+                                                >
+
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Margin="1,1,4,1"
+                                              HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                                               Text="{Binding Cantidad, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <TextBox Margin="1,1,1,1"   HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                                     Text="{Binding Cantidad, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="Loaded">
+                                        <mvvm:TakeFocusAndSelectTextOnVisibleBehavior />
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </TextBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
+
+                    <DataGridTemplateColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="IsEditing" Value="True" />
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#ff9900" />
+                                    <Setter Property="Foreground" Value="Black" />
+                                    <Setter Property="BorderBrush" Value="Transparent" />
+                                    <Setter Property="BorderThickness" Value="0" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGridTemplateColumn.CellStyle>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Width="auto"
+                                    Binding="{Binding Total}"
+                                    CanUserResize="True"
+                                    Header="Total"
+                                    IsReadOnly="True" />
+
+            </DataGrid.Columns>
+
+        </bsFilter:FilterDataGrid>
+
+        <Border Style="{StaticResource BorderBottom}" Grid.Row="4" Height="5" />
+
+        <Button Content="Guardar" Grid.Row="5" Width="150" Height="35" VerticalAlignment="Center" HorizontalAlignment="Right" Command="{Binding GuardarCmd}" />
+
+        <bsFilter:FilterDataGrid x:Name="gr2"
+                  Grid.Row="6"
+                  Grid.Column="0"
+                
+                  Margin="2,5,2,5"
+                  AutoGenerateColumns="False"
+                  Background="Silver"
+                  CanUserAddRows="False"
+                  CanUserResizeRows="True"
+                  ItemsSource="{Binding OrdenDeCompraProveedorTotal,
+                                        IsAsync=True}">
+
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="PreviewMouseDown">
+                    <mvvm:EventToCommand Command="{Binding SelectedITemGridClick}" CommandParameter="{Binding EventArgs, RelativeSource={RelativeSource Self}}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+
+            <DataGrid.Columns>             
+                
+
+
+                <DataGridTextColumn Width="*"
+                                    Binding="{Binding Producto}"
+                                    CanUserResize="True"
+                                    Header="Producto"
+                                    IsReadOnly="True" />
+
+                <DataGridTemplateColumn Width="0.5*"
+                                                CanUserResize="True"
+                                                Header="Cantidad "
+                                                IsReadOnly="False"
+                                                >
+
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Label Margin="1,1,4,1" 
+                                              HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                                               Content="{Binding Cantidad, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+                   
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Width="auto"
+                                    Binding="{Binding UOM}"
+                                    CanUserResize="True"
+                                    Header="UOM"
+                                    IsReadOnly="True" />
+
+                <DataGridTextColumn Width="0.4*"
+                                    Binding="{Binding Impuestos}"
+                                    CanUserResize="True"
+                                    Header="Impuestos"
+                                    IsReadOnly="True" />
+
+                <DataGridTemplateColumn Width="0.4*"
+                                                CanUserResize="True"
+                                                Header="Linea "
+                                                IsReadOnly="False"
+                                                >
+
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Margin="1,1,4,1"
+                                              HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                                               Text="{Binding Linea, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <TextBox Margin="1,1,1,1"   HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                                     Text="{Binding Linea, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="Loaded">
+                                        <mvvm:TakeFocusAndSelectTextOnVisibleBehavior />
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                            </TextBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
+
+                    <DataGridTemplateColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="IsEditing" Value="True" />
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#ff9900" />
+                                    <Setter Property="Foreground" Value="Black" />
+                                    <Setter Property="BorderBrush" Value="Transparent" />
+                                    <Setter Property="BorderThickness" Value="0" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGridTemplateColumn.CellStyle>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Width="0.4*"
+                                    Binding="{Binding PrecioUnitario}"
+                                    CanUserResize="True"
+                                    Header="Precio Unitario"
+                                    IsReadOnly="True" />
+
+                <DataGridTextColumn Width="0.4*"
+                                    Binding="{Binding Total}"
+                                    CanUserResize="True"
+                                    Header="Total"
+                                    IsReadOnly="True" />
+
+            </DataGrid.Columns>
+
+        </bsFilter:FilterDataGrid>
+
+    </Grid>
+</Window>

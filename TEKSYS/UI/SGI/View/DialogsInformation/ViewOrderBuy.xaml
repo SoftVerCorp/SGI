@@ -1,0 +1,283 @@
+﻿<UserControl x:Class="SGI.View.DialogsInformation.ViewOrderBuy"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+             xmlns:mvvm="clr-namespace:SGI.Stuffs"
+             mc:Ignorable="d"  x:Name="viewOrderBuy"               
+             Background="#C0C0C0">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadedControl}" CommandParameter="{Binding ElementName=viewOrderBuy}">
+            </i:InvokeCommandAction>
+        </i:EventTrigger>
+
+    </i:Interaction.Triggers>
+    <UserControl.Resources>
+
+    </UserControl.Resources>
+    <DockPanel>
+        <Label  DockPanel.Dock="Top" Content="Consultar Ordenes de compra" Style="{StaticResource LabelTitle}"/>
+        <Border DockPanel.Dock="Top" Margin="0,2,0,2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="165"/>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="180" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="160" />
+                    <ColumnDefinition Width="130"/>
+                    <ColumnDefinition Width="170" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0"   Content="Desde:" />
+                <DatePicker Grid.Row="0" Grid.Column="1" Style="{StaticResource  styleDatePicker}" 
+                   Margin="0,0,5,0" SelectedDate="{Binding BeginDateFilter, Mode=TwoWay}" />
+
+                <Label Grid.Row="1" Grid.Column="0"   Content="Hasta:" />
+                <DatePicker Grid.Row="1" Grid.Column="1" Style="{StaticResource  styleDatePicker}" 
+                   Margin="0,0,5,0" SelectedDate="{Binding EndDateFilter, Mode=TwoWay}" />
+
+                <Label Grid.Row="0" Grid.Column="2"   Content="Proveedor:" />
+                <TextBox Grid.Row="0" Grid.Column="3"     
+                     Text="{Binding ProviderNameFilter, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,5,0"/>
+
+                <Label Grid.Row="1" Grid.Column="2"   Content="Orden de compra:" />
+                <TextBox Grid.Row="1" Grid.Column="3"  
+                     Text="{Binding OrderBuyFilter, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,5,0" />
+
+                <Label Grid.Row="0" Grid.Column="4"   Content="Empleado comprador:" />
+                <TextBox Grid.Row="0" Grid.Column="5"  
+                     Text="{Binding EmployeeBuyeerFilter, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,5,0"/>
+
+                <Label Grid.Row="1" Grid.Column="4"   Content="Empleado verificador:" />
+                <TextBox Grid.Row="1" Grid.Column="5"    
+                     Text="{Binding EmployeeValidatorFilter, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,5,0" />
+
+                <Button Grid.Column="6" Content="Refrescar" Width="150" Height="35" Margin="3,2,0,0"
+                        HorizontalAlignment="Left" VerticalAlignment="Center"
+                         Command="{Binding Refresh}" IsEnabled="{Binding IsEnableControl}"/>
+
+                <Button Grid.Column="6" Grid.Row="1" Margin="3,2,0,0" Content="Limpiar Filtros" Width="150" Height="35" 
+                        HorizontalAlignment="Left" VerticalAlignment="Center"
+                         Command="{Binding CleanItems}" IsEnabled="{Binding IsEnableControl}"/>
+
+                <Button Grid.Column="7" Grid.Row="1" Margin="3,2,0,0"  Width="120" Height="38" 
+                        HorizontalAlignment="Left" VerticalAlignment="Center"
+                         Command="{Binding ExcelExport}" IsEnabled="{Binding IsExcelEnable}">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Resources/Images/excel.png" />
+                            <Label Content="Exportar" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+
+                <Button Grid.Column="8" Grid.Row="1" Margin="3,2,0,0"  Width="130" Height="38" 
+                        HorizontalAlignment="Left" VerticalAlignment="Center"
+                         Command="{Binding CreateReport}" IsEnabled="{Binding IsReportEnable}">
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Resources/Images/report2.png" />
+                            <Label Content="Reporte" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+            </Grid>
+        </Border>
+        <Border>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="{Binding IsOpenWidth, Converter={StaticResource WidthColOrderConverter}}" />
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <DockPanel Grid.Column="0" Margin="0,0,0,5">
+                    <Border DockPanel.Dock="Bottom" Height="40" Style="{StaticResource BorderBottom}">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Button Height="35" Width="40" Margin="2" Cursor="Hand" ToolTip="Guardar Cambios"
+                                Command="{Binding Save}" >
+                                <Button.Content>
+                                    <Image Source="/Resources/Images/imgSave32.png" Stretch="Fill"></Image>
+                                </Button.Content>
+                            </Button>
+
+                            <Button Height="35" Width="40" Margin="2" ToolTip="Eliminar Elemento"
+                                Command="{Binding DeleteItem}">
+                                <Button.Content>
+                                    <Image Source="/Resources/Images/imgDelete32.png" Stretch="Fill"></Image>
+                                </Button.Content>
+                            </Button>
+
+                            <Button Height="35" Width="40" Margin="2" ToolTip="Nuevo"  Command="{Binding Clean}">
+                                <Button.Content>
+                                    <Image Source="/Resources/Images/Clean32.png" Stretch="Fill"></Image>
+                                </Button.Content>
+                            </Button>
+
+                        </StackPanel>
+                    </Border>
+                    <TabControl Grid.Column="0">
+                        <TabItem Header="Orden de Compra">
+                            <TabControl>
+                                <TabItem Header="                              ">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto" />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition Width="auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Label Height="35"   Content="Proveedor:" Grid.Row="0" Grid.Column="0"/>
+                                        <TextBox Height="35" Grid.Row="0" Grid.Column="1"   MaxLength="100"
+                     Text="{Binding ProviderName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Margin="0,0,5,0"
+                     IsReadOnly="True"
+                     />
+
+                                        <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" Width="40" Height="30" 
+                    Margin="0,3,5,3" Content="..."
+                    Command="{Binding SelectedProvider}"
+                    />
+
+                                        <Label Height="35"   Content="Empleado comprador:" Grid.Row="1" Grid.Column="0"/>
+                                        <TextBox Height="35" Grid.Row="1" Grid.Column="1"   MaxLength="100"
+                     Text="{Binding EmployeeBuyeerName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Margin="0,0,5,0"
+                       IsReadOnly="True"/>
+                                        <Button Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" Width="40" Height="30" Margin="0,3,5,3" Content="..."
+                    Command="{Binding SelectedEmployeeBuyeer}"/>
+
+
+                                        <Label Height="35"   Content="Empleado Validador:" Grid.Row="2" Grid.Column="0"/>
+                                        <TextBox Height="35" Grid.Row="2" Grid.Column="1"   MaxLength="50"
+                     Text="{Binding EmployeeValidatorName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Margin="0,0,5,0"
+                       IsReadOnly="True" />
+                                        <Button Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" Width="40" Height="30" Margin="0,3,5,3" Content="..."
+                    Command="{Binding SelectedEmployeeValidator}"/>
+
+                                        <Label Height="35"   Content="Condición de pago:" Grid.Row="3" Grid.Column="0"/>
+                                        <ComboBox Height="35" Grid.Row="3" Grid.Column="1" Style="{StaticResource CmbValue}"  ItemsSource="{Binding PaymentList}"
+                      SelectedValuePath="Id"  
+                      DisplayMemberPath="Name" SelectedValue="{Binding SelectedPayment}"                  
+                      Margin="0,0,5,0"/>
+
+                                        <Label Height="35"   Content="Orden de compra:" Grid.Row="4" Grid.Column="0"/>
+                                        <TextBox Height="35" Grid.Row="4" Grid.Column="1"   MaxLength="50"
+                     Text="{Binding OrderBuy, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Margin="0,0,5,0"/>
+
+                                        <Label Height="35"   Content="Fecha de colocación:" Grid.Row="5" Grid.Column="0"/>
+                                        <DatePicker Height="35" Grid.Row="5" Grid.Column="1" Style="{StaticResource styleDatePicker}"
+                     SelectedDate="{Binding ColocationDate, Mode=TwoWay}" Margin="0,0,5,0"/>
+
+                                        <Label Height="35"   Content="Fecha de validación:" Grid.Row="6" Grid.Column="0"/>
+                                        <DatePicker Height="35" Grid.Row="6" Grid.Column="1" Style="{StaticResource styleDatePicker}"
+                     SelectedDate="{Binding ValidationDate, Mode=TwoWay}" Margin="0,0,5,0"/>
+
+                                        <Label Height="35"   Content="Status:" Grid.Row="7" Grid.Column="0"/>
+                                        <ComboBox Height="35" Grid.Row="7" Grid.Column="1" Style="{StaticResource  CmbValue}" 
+                     Margin="0,0,5,0"  ItemsSource="{Binding StatusBuyList}"
+                      SelectedValuePath="Id" DisplayMemberPath="Name" SelectedValue="{Binding StatusBuyId, Mode=TwoWay}"
+                      SelectedIndex="0" />
+
+                                    </Grid>
+                                </TabItem>
+
+                            </TabControl>
+                        </TabItem>
+                    </TabControl>
+                </DockPanel>
+
+                <Button Grid.Column="1" Height="100"
+                    Width="10" HorizontalAlignment="Center" VerticalAlignment="Center"
+                    Command="{Binding OpenWidthCommand}">
+                    <Button.Content>
+                        <Image Width="10" Height="100" Source="/Resources/Images/Open.png"></Image>
+                    </Button.Content>
+                </Button>
+
+                <ScrollViewer Grid.Column="2" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Hidden">
+                    <DataGrid AutoGenerateColumns="False"  CanUserAddRows="False"  Name="gridOrderBuys"
+                      Margin="0,5,0,0"
+                  ItemsSource="{Binding ItemList , Mode=TwoWay, IsAsync=True}"   
+                  SelectedItem="{Binding SelectedItem}" >
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="PreviewMouseDown" >
+                                <mvvm:EventToCommand Command="{Binding SelectedITemGridClick}" CommandParameter="{Binding EventArgs, RelativeSource={RelativeSource Self}}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn   Header="Detalle" Width="100">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                            <Label Cursor="Hand" ToolTip="Agregar">
+                                                <i:Interaction.Triggers>
+                                                    <i:EventTrigger EventName="MouseDown">
+                                                        <i:InvokeCommandAction Command="{Binding ElementName=viewOrderBuy,Path=DataContext.ViewDetail}" CommandParameter="{Binding}">
+                                                        </i:InvokeCommandAction>
+                                                    </i:EventTrigger>
+                                                </i:Interaction.Triggers>
+                                                <Label.Content>
+                                                    <Image Source="/Resources/Images/add_2.png"/>
+                                                </Label.Content>
+                                            </Label>
+                                            <!--<Label>
+                                        <Label.Content>
+                                            <Image Source="/Resources/Images/Files-Edit-file-icon.png"/>
+                                        </Label.Content>
+                                    </Label>-->
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <!--<DataGridTextColumn   Header="Proveedor" Width="200" Binding="{Binding ProviderName}" ></DataGridTextColumn>-->
+                            <DataGridTextColumn   Header="Proveedor" Width="200" Binding="{Binding ProviderName}" ></DataGridTextColumn>
+                            <DataGridTextColumn   Header="Emp. Compro." Width="200"  Binding="{Binding EmployeeBuyeerName}" ></DataGridTextColumn>
+                            <DataGridTextColumn   Header="Emp. Valido." Width="200"  Binding="{Binding EmployeeValidatorName}" ></DataGridTextColumn>
+                            <DataGridTextColumn   Header="Cond. Pago" Width="150"  Binding="{Binding ConditionPayment}" ></DataGridTextColumn>
+                            <DataGridTextColumn   Header="Orden de Compra" Width="200"  Binding="{Binding NumberOrderBuy}" ></DataGridTextColumn>
+                            <DataGridTextColumn   Header="Estatus" Width="200"  Binding="{Binding StatusName}" ></DataGridTextColumn>
+                            <DataGridTextColumn   Header="F. Colocación" Width="200" Binding="{Binding DateColocation,StringFormat={}{0:dd/MM/yyyy}}">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Setter Property="HorizontalAlignment" Value="Center" />
+                                        <Setter Property="VerticalAlignment" Value="Center" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn   Header="F. Validación" Width="200" Binding="{Binding DateValidation,StringFormat={}{0:dd/MM/yyyy}}">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="{x:Type TextBlock}">
+                                        <Setter Property="HorizontalAlignment" Value="Center" />
+                                        <Setter Property="VerticalAlignment" Value="Center" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </ScrollViewer>
+            </Grid>
+        </Border>
+    </DockPanel>
+</UserControl>
+
