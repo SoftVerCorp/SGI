@@ -39,9 +39,9 @@ namespace SGI.Model
                 {
                     var checadaDetalle = Detalles.First();
 
-                    TimeSpan t1 = checadaDetalle.Entrada - checadaDetalle.SalidaComida;
+                    TimeSpan t1 = checadaDetalle.SalidaComida - checadaDetalle.Entrada;
 
-                    TimeSpan t2 = checadaDetalle.EntradaComida - checadaDetalle.Salida;
+                    TimeSpan t2 = checadaDetalle.Salida - checadaDetalle.EntradaComida;
 
                     TimeSpan T = t1 + t2;
 

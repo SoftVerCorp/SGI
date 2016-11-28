@@ -30,6 +30,7 @@ namespace SGI.ViewModel.Contabilidad
         private void InicializarDatos()
         {
             Repository.EmpleadosCache = Repository.GetEmployees("", ManejadorUbicacion.IdUbicacion);
+            FechaActual = DateTime.Now.ToString("dddd MM yyyy");
         }
 
         #endregion
@@ -88,7 +89,7 @@ namespace SGI.ViewModel.Contabilidad
 
         public void OnRegistrar()
         {
-            if (Repository.RegistrarChecadas(SelectedEmpleado.Id))
+            if (Repository.RegistrarChecadas(SelectedEmpleado.Id,1))
             {
                 Buscar();
             }
@@ -105,7 +106,14 @@ namespace SGI.ViewModel.Contabilidad
 
         public void OnRegistrarFalta()
         {
-
+            if (Repository.RegistrarChecadas(SelectedEmpleado.Id,3))
+            {
+                Buscar();
+            }
+            else
+            {
+                System.Windows.MessageBox.Show("Checada no registrada");
+            }
         }
 
         //public void OnBuscarEmpleado()

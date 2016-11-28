@@ -5387,7 +5387,7 @@
             }
         }
 
-        public static bool RegistrarChecadas(int idEmpleado)
+        public static bool RegistrarChecadas(int idEmpleado, int idTipoChecada)
         {
             using (SqlConnection conn = new SqlConnection())
             {
@@ -5401,6 +5401,7 @@
                         sqlCommand.CommandText = Constants.SPInsChecada;
                         sqlCommand.CommandType = System.Data.CommandType.StoredProcedure;
                         sqlCommand.Parameters.Add("@IdEmpleado", System.Data.SqlDbType.Int).Value = idEmpleado;
+                        sqlCommand.Parameters.Add("@idTipoChecada", System.Data.SqlDbType.Int).Value = idTipoChecada;
                         conn.Open();
                         sqlCommand.ExecuteNonQuery();
                         conn.Close();

@@ -1107,3 +1107,4 @@ C:\Users\AUTO_GIGA\Documents\GitHub\SGI\TEKSYS\Libraries\Libraries.Video\obj\Deb
 C:\Users\AUTO_GIGA\Documents\GitHub\SGI\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csproj.GenerateResource.Cache
 C:\Users\AUTO_GIGA\Documents\GitHub\SGI\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.dll
 C:\Users\AUTO_GIGA\Documents\GitHub\SGI\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.pdb
+C:\Users\AUTO_GIGA\Documents\GitHub\SGI\TEKSYS\Libraries\Libraries.Video\obj\Debug\Libraries.Video.csprojResolveAssemblyReference.cache
