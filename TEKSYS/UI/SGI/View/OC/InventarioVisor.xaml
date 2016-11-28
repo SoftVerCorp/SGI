@@ -5,8 +5,9 @@
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:mvvm="clr-namespace:SGI.Stuffs"
         Title="Inventario de productos"
-        Width="1150"
-        Height="700"
+        Width="1280"
+        Height="Auto"
+        WindowState="Maximized"
         WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <ResourceDictionary Source="/Resources/Styles/ItemsFilterStyle.xaml" />

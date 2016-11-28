@@ -4,8 +4,9 @@
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:mvvm="clr-namespace:SGI.Stuffs"
         Title="OrdenesDeCompra"
-        Width="1050"
-        Height="700"
+        Width="1280"
+        Height="Auto"
+        WindowState="Maximized"
         WindowStartupLocation="CenterScreen">
     <DockPanel>
         <GroupBox Margin="2" Height="110"
@@ -214,12 +215,12 @@
                 <Label Grid.Row="0"
                        Grid.Column="6"
                        Content="Usuario Genera: " />
-                <ComboBox Grid.Row="0" IsEnabled="False"
+                <ComboBox Grid.Row="0" IsEnabled="True"
                           Grid.Column="7"
                           Grid.ColumnSpan="1"
                           Height="30"
                           Margin="0"
-                          DisplayMemberPath="Name"
+                          DisplayMemberPath="NombreCompleto"
                           ItemsSource="{Binding Empleados}"
                           SelectedItem="{Binding EmpleadoSeleccionado}" />
 

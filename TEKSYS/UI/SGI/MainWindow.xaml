@@ -291,6 +291,12 @@
                             <Image Source="/Resources/Images/Employees.png" />
                         </MenuItem.Icon>
                     </MenuItem>
+                    <MenuItem Header="Nomina"
+                              Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.ViewNomidaCmd}" >
+                        <MenuItem.Icon>
+                            <Image Source="/Resources/Images/Employees.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
 
 

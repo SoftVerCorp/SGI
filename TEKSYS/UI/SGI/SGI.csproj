@@ -244,6 +244,7 @@
     <Compile Include="ViewModel\Catalogos\CatalogoClienteViewModel.cs" />
     <Compile Include="ViewModel\Contabilidad\ChecadasViewModel.cs" />
     <Compile Include="ViewModel\Contabilidad\EmpleadosViewModel.cs" />
+    <Compile Include="ViewModel\Contabilidad\NominaViewModel.cs" />
     <Compile Include="ViewModel\Contabilidad\PuestosViewModel.cs" />
     <Compile Include="ViewModel\CreditoYCobranza\AbonarVM.cs" />
     <Compile Include="ViewModel\CreditoYCobranza\VisorDeAbonosVM.cs" />
@@ -329,6 +330,9 @@
     </Compile>
     <Compile Include="View\Contabilidad\EmpleadosView.xaml.cs">
       <DependentUpon>EmpleadosView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Contabilidad\NominaView.xaml.cs">
+      <DependentUpon>NominaView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Contabilidad\PuestosView.xaml.cs">
       <DependentUpon>PuestosView.xaml</DependentUpon>
@@ -616,6 +620,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Contabilidad\EmpleadosView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Contabilidad\NominaView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

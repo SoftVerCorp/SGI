@@ -78,7 +78,7 @@ namespace SGI.Model
                 }
             }
 
-        }        
+        }
 
         public static int ValidarLimiteDeCredito(int idCliente, double totalVenta)
         {
@@ -279,17 +279,18 @@ namespace SGI.Model
                         while (reader.Read())
                         {
                             var cliente = new ClienteVenta();
-                            cliente.idCliente = Convert.ToInt32(reader["idCliente"]);
-                            cliente.Nombre = reader["nombre"].ToString();
-                            cliente.Direccion = reader["direccion"].ToString();
+                            cliente.idCliente = Convert.ToInt32(reader["IdCliente"]);
+                            cliente.Nombre = reader["NombreComercial"].ToString();
+                            cliente.Direccion = reader["Direccion"].ToString();
                             cliente.RFC = reader["Rfc"].ToString();
-                            cliente.Telefono = "";
-                            cliente.CP = reader["cp"].ToString();
+                            cliente.Telefono = reader["Telefono1"].ToString();
+                            cliente.CP = reader["Cp"].ToString();
                             cliente.Ciudad = reader["Ciudad"].ToString();
                             cliente.Estado = reader["Estado"].ToString();
                             cliente.idTipoCliente = Convert.ToInt32(reader["idTipoCliente"].ToString());
                             cliente.TipoCliente = reader["TipoDecliente"].ToString();
-                            cliente.DescuentoCliente = Convert.ToDouble(reader["Descuento"].ToString());
+                            //cliente.DescuentoCliente = Convert.ToDouble(reader["Descuento"].ToString());
+                            cliente.DescuentoCliente = 0;
                             lstProduct.Add(cliente);
                         }
 

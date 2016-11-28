@@ -1,0 +1,128 @@
+﻿<Window x:Class="SGI.View.Contabilidad.NominaView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SGI.View.Contabilidad"
+        xmlns:wpfext="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:combo2="http://wpfcontrols.com/"
+        xmlns:combo="clr-namespace:SGI.AutoCombo"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:bh="clr-namespace:SGI.Stuffs"
+        xmlns:bsFilter="http://schemas.bolapansoft.com/xaml/Controls/ItemsFilter"
+        mc:Ignorable="d"
+        Title="NominaView"
+        Width="1280"
+        Height="Auto"
+        WindowState="Maximized">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Calendar DisplayMode="Month" SelectionMode="SingleDate" SelectedDate="{Binding SelectedDate}"  Grid.Column="0" >
+            </Calendar>
+
+            <GroupBox Grid.Row="1" Header="Datos"  Grid.Column="1">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Orientation="Horizontal" Grid.Row="0">
+                        <Label Content="Nomina:"></Label>
+                        <Label Content="{Binding YearNomina}"></Label>
+                        <Label Content=" Quincena "></Label>
+                        <Label Content="{Binding WeekNomina}"></Label>
+                    </StackPanel>
+
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Column="0" Grid.Row="0" Content="Concepto"></Label>
+                        <Label Grid.Column="1" Grid.Row="0" Content="{Binding Concepto}"></Label>
+
+                        <Label Grid.Column="0" Grid.Row="1" Content="Periodo"></Label>
+                        <StackPanel Grid.Column="1" Grid.Row="1"  Orientation="Horizontal">
+                            <Label  Content="{Binding BeginDate}"></Label>
+                            <Label  Content="al"></Label>
+                            <Label  Content="{Binding EndDate}"></Label>
+                        </StackPanel>
+
+                        <Label Grid.Column="0" Grid.Row="2" Content="Fecha de Pago"></Label>
+                        <Label Grid.Column="1" Grid.Row="2" Content="{Binding FechaPago}"></Label>
+
+                    </Grid>
+
+                </Grid>
+            </GroupBox>
+
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Button Command="{Binding SalirCmd}" Width="120" Height="40" >
+                    <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <!--<Image Stretch="None" Source="/Resources/Images/search_icon.png" />-->
+                        <TextBlock Text="Salir [Shift-Esc]" HorizontalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding SalirCmd}" Width="150" Height="40" >
+                    <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <!--<Image Stretch="None" Source="/Resources/Images/search_icon.png" />-->
+                        <TextBlock Text="Generar Nomina del Mes" HorizontalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+
+
+            <GroupBox Grid.Row="1" Header="Nominas" >
+                <DataGrid 
+                    AutoGenerateColumns="False"
+                    Background="Silver"
+                    ItemsSource="{Binding ChecadasMes, IsAsync=True}"
+                    SelectionMode="Single"
+                    FrozenColumnCount="1"
+                    ScrollViewer.VerticalScrollBarVisibility="Auto"
+                    >
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Empleado" Width="300"></DataGridTextColumn>
+                        <DataGridTextColumn Header="RFC" Width="200"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Pago" Width="100"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Percepciones" Width="100"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Deducciones" Width="100"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Pago" Width="100"></DataGridTextColumn>
+                        <DataGridTextColumn Header="ISR" Width="100"></DataGridTextColumn>
+                    </DataGrid.Columns>
+
+                </DataGrid>
+            </GroupBox>
+
+        </Grid>
+
+    </Grid>
+</Window>

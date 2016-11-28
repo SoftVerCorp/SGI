@@ -632,6 +632,14 @@ namespace SGI.ViewModel
             }
         }
 
+        public ICommand ViewNomidaCmd
+        {
+            get
+            {
+                return new RelayCommand(s => this.MostrarNomina());
+            }
+        }
+
         private void MostrarVisorAdeudos()
         {
             try
@@ -1133,6 +1141,20 @@ namespace SGI.ViewModel
             {
                 ChecadasView cv = new ChecadasView();
                 cv.DataContext = new ChecadasViewModel();
+                cv.Show();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public void MostrarNomina()
+        {
+            try
+            {
+                NominaView cv = new NominaView();
+                cv.DataContext = new NominaViewModel();
                 cv.Show();
             }
             catch (Exception)
